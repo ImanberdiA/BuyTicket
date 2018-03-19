@@ -1,0 +1,6 @@
+{
+  "users": {
+    "server": "localhost",
+    "port": 1000
+  }
+}
