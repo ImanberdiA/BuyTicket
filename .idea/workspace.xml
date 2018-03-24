@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/search/frontend/index.ejs" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/search/frontend/index.html" afterPath="$PROJECT_DIR$/search/frontend/index.html" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/search/frontend/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/search/searchController.js" afterPath="$PROJECT_DIR$/search/searchController.js" />
+      <change beforePath="$PROJECT_DIR$/search/searchQuery.js" afterPath="$PROJECT_DIR$/search/searchQuery.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +24,8 @@
       <file leaf-file-name="searchQuery.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -30,8 +34,18 @@
       <file leaf-file-name="searchController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="85" lean-forward="false" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+            <state relative-caret-position="170">
+              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/search/frontend/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -40,18 +54,8 @@
       <file leaf-file-name="searchService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/searchService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="182">
               <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/search/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -68,9 +72,12 @@
         <option value="$PROJECT_DIR$/search/search.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/search/frontend/index.js" />
-        <option value="$PROJECT_DIR$/search/searchService.js" />
-        <option value="$PROJECT_DIR$/search/searchController.js" />
         <option value="$PROJECT_DIR$/search/frontend/index.html" />
+        <option value="$PROJECT_DIR$/search/searchService.js" />
+        <option value="$PROJECT_DIR$/search/frontend/index.hbs" />
+        <option value="$PROJECT_DIR$/search/searchQuery.js" />
+        <option value="$PROJECT_DIR$/search/searchController.js" />
+        <option value="$PROJECT_DIR$/search/frontend/index.ejs" />
       </list>
     </option>
   </component>
@@ -139,6 +146,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs\search\frontend" />
+      <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs\search" />
       <recent name="C:\Users\Colibri\WebstormProjects\rsoi\search" />
     </key>
   </component>
@@ -154,8 +163,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.IndexReact">
-    <configuration name="IndexReact" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/search/frontend/index.html" working-dir="$PROJECT_DIR$/search/frontend" />
+  <component name="RunManager" selected="Node.js.Unnamed">
+    <configuration name="IndexReact" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/search/frontend/index.ejs" working-dir="$PROJECT_DIR$/search/frontend" />
     <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/search/searchQuery.js" working-dir="$PROJECT_DIR$" />
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$" />
     <list size="2">
@@ -178,12 +187,12 @@
       <updated>1521794740068</updated>
       <workItem from="1521794742451" duration="18444000" />
       <workItem from="1521870263096" duration="786000" />
-      <workItem from="1521873433201" duration="13332000" />
+      <workItem from="1521873433201" duration="22569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32562000" />
+    <option name="totallyTimeSpent" value="41799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1552" height="840" extended-state="6" />
@@ -197,7 +206,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13983051" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -276,9 +285,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="87" column="23" lean-forward="false" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="182">
           <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
@@ -286,24 +303,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="85" lean-forward="false" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+        <state relative-caret-position="170">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/frontend/index.html">
+    <entry file="file://$PROJECT_DIR$/search/frontend/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="136">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
