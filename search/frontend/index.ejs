@@ -10,8 +10,19 @@
 <body>
 <div id="root"></div>
     <script type="text/babel">
+
+        var searchApp = React.createClass({
+            render: function () {
+                return(
+                    <div className="searchApp">
+                        <%= name[0].fromPlace %>
+                    </div>
+                );
+            }
+        });
+
         ReactDOM.render(
-            <h1>Hello, world! <%= name[0].fromPlace%> </h1>,
+            <h1>Hello, world!</h1>,
             document.getElementById('root')
         );
 

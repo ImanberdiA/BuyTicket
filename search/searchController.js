@@ -6,7 +6,7 @@ class SearchController {
     async getAllFlights(req, res) {
         try{
             var result = await searchServiceObject.getAllFlights('Moscow', 'Astana');
-            console.log(result[0]);
+            console.log(result);
             // res.send(result);
             res.render('index', { name: result });
         }catch(error) {
