@@ -11,16 +11,16 @@ class SearchService {
             host: 'localhost',
             user: 'root',
             password: '',
-            database: 'user_side'
+            database: 'flights_schedule'
         });
     }
 
-    getAllFlights(){
+    getAllFlights(fromPlace, toPlace){
         this.init();
         return new Promise((resolve, reject) => {
             connection.connect(function (err) {
-                const query = connection.query('SELECT * FROM users', function (err, result) {
-                    console.log(result);
+                const query = connection.query('SELECT * FROM flights WHERE fromPlace = ? AND toPlace = ?', [fromPlace, toPlace], function (err, result) {
+                    // console.log(JSON.stringify(result));
                     resolve(result);
                 });
             });
