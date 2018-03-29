@@ -4,7 +4,7 @@ var searchController = require("./searchController");
 var app = express();
 app.listen(8080);
 
-app.set('views', __dirname + '/frontend/');
+app.set('views', __dirname + '/js/');
 app.set('view engine', 'ejs');
 
 let searchObject = new searchController.SearchController();
