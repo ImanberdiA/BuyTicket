@@ -7,8 +7,8 @@ class SearchController {
         try{
             var result = await searchServiceObject.getAllFlights('Moscow', 'Astana');
             console.log(result);
-            // res.send(result);
-            res.render('index', { name: result });
+            res.send(result);
+            //res.render('index', { name: result });
         }catch(error) {
             console.log("Error");
         }
