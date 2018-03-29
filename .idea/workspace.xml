@@ -2,103 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/js/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/js/react/react.development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search/js/reactApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rsoikurs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rsoikurs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/js/react/babel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search/js/react/react-dom.development.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/amdefine/intercept.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/amdefine/intercept.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/lib/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/lib/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bignumber.js/bignumber.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cliui/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cliui/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/consolidate/lib/consolidate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/consolidate/lib/consolidate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/src/debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/inspector-log.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/src/inspector-log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/src/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/destroy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/destroy/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/ejs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/lib/ejs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/express/lib/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/lib/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fresh/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fresh/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/.istanbul.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/.istanbul.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/appveyor.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/bin/handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/bin/handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/dist/amd/precompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/dist/amd/precompiler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/dist/cjs/precompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/dist/cjs/precompiler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/lib/precompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/lib/precompiler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/print-script" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/print-script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/inherits/inherits_browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/inherits/inherits_browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lazy-cache/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lazy-cache/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/methods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/methods/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mime/build/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/build/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/minimist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/minimist/test/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimist/test/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/minimist/test/short.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimist/test/short.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/lib/Connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/on-finished/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/on-finished/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/optimist/example/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/optimist/example/string.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/optimist/example/usage-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/optimist/example/usage-options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/optimist/test/_.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/optimist/test/_.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/optimist/test/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/optimist/test/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/qs/dist/qs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/dist/qs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/qs/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/repeat-string/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/repeat-string/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/build/assert-shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/build/assert-shim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/build/mini-require.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/build/mini-require.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/build/suffix-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/build/suffix-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/array-set.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/array-set.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/base64-vlq.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/base64-vlq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/base64.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/base64.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/binary-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/binary-search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/mapping-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/mapping-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/quick-sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/quick-sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-consumer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/bin/uglifyjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/array-set.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/array-set.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/base64-vlq.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/base64-vlq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/base64.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/base64.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/binary-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/binary-search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/mapping-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/mapping-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/quick-sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/quick-sort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/tools/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/tools/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-to-browserify/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-to-browserify/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/unpipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/unpipe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util-deprecate/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/util-deprecate/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/yargs/lib/parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/yargs/lib/parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/frontend/index.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/frontend/js/babel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/frontend/js/react-dom.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/frontend/js/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/searchQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/js/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/search/js/index.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -124,17 +31,17 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/js/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="68" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="119">
+              <caret line="7" column="71" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="react.development.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js">
+      <file leaf-file-name="babel.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="1683" column="5" selection-start-line="1683" selection-start-column="5" selection-end-line="1683" selection-end-column="5" />
+            <state relative-caret-position="199">
+              <caret line="26" column="20052" selection-start-line="26" selection-start-column="20052" selection-end-line="26" selection-end-column="20052" />
             </state>
           </provider>
         </entry>
@@ -188,8 +95,10 @@
         <option value="$PROJECT_DIR$/search/frontend/reactApp.js" />
         <option value="$PROJECT_DIR$/search/js/reactApp.js" />
         <option value="$PROJECT_DIR$/search/searchQuery.js" />
-        <option value="$PROJECT_DIR$/search/js/index.ejs" />
         <option value="$PROJECT_DIR$/search/js/react/react.development.js" />
+        <option value="$PROJECT_DIR$/search/js/react/react-dom.development.js" />
+        <option value="$PROJECT_DIR$/search/js/index.ejs" />
+        <option value="$PROJECT_DIR$/search/js/react/babel.min.js" />
       </list>
     </option>
   </component>
@@ -298,12 +207,12 @@
       <workItem from="1521873433201" duration="26478000" />
       <workItem from="1522068528726" duration="599000" />
       <workItem from="1522303533743" duration="38000" />
-      <workItem from="1522303690411" duration="10691000" />
+      <workItem from="1522303690411" duration="10953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57036000" />
+    <option name="totallyTimeSpent" value="57298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1274" y="-6" width="1549" height="837" extended-state="6" />
@@ -545,17 +454,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="1683" column="5" selection-start-line="1683" selection-start-column="5" selection-end-line="1683" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="16047" column="42" lean-forward="true" selection-start-line="16047" selection-start-column="42" selection-end-line="16047" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/js/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="26" column="20052" selection-start-line="26" selection-start-column="20052" selection-end-line="26" selection-end-column="20052" />
         </state>
       </provider>
     </entry>
