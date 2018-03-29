@@ -9,6 +9,8 @@ app.set('view engine', 'ejs');
 
 let searchObject = new searchController.SearchController();
 
-app.get('/:placeholder', searchObject.getAllFlights);
+app.get('/:placeholder', searchObject.getListFlights);
+
+// app.get('/:pp', searchObject);
 
 // app.get('/:hello', Obj.getListOfFlightsController);

@@ -15,11 +15,11 @@ class SearchService {
         });
     }
 
-    getAllFlights(fromPlace, toPlace){
+    getListFlights(fromPlace, toPlace, date){
         this.init();
         return new Promise((resolve, reject) => {
             connection.connect(function (err) {
-                const query = connection.query('SELECT * FROM flights WHERE fromPlace = ? AND toPlace = ?', [fromPlace, toPlace], function (err, result) {
+                const query = connection.query('SELECT * FROM flights WHERE fromPlace = ? AND toPlace = ? AND date = ?', [fromPlace, toPlace, date], function (err, result) {
                     // console.log(JSON.stringify(result));
                     resolve(result);
                 });
