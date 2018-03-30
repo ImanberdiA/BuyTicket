@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/js/reactApp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/search/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/searchQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchQuery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/searchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchService.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +29,8 @@
       <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="119">
+              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -42,8 +38,8 @@
       <file leaf-file-name="searchService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/searchService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="17" column="43" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="73">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -89,17 +85,16 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-76" />
-    <option name="y" value="-21" />
-    <option name="width" value="1260" />
-    <option name="height" value="945" />
+    <option name="x" value="1562" />
+    <option name="y" value="-8" />
+    <option name="width" value="1575" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +115,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,51 +172,61 @@
       <workItem from="1522068528726" duration="599000" />
       <workItem from="1522303533743" duration="38000" />
       <workItem from="1522303690411" duration="29693000" />
+      <workItem from="1522394262609" duration="5214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76038000" />
+    <option name="totallyTimeSpent" value="81252000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="1274" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15421304" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12813738" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32819074" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34792626" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32959327" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3478261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26507714" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27769986" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39831698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28672317" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20541611" />
       <window_info id="Structure" order="1" weight="0.24966975" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28672317" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.13983051" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -231,6 +237,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -315,9 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/search/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -331,9 +355,6 @@
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -350,9 +371,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/searchController.js" />
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -360,33 +378,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/frontend/react/babel.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/browser.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="18807" column="3" selection-start-line="18807" selection-start-column="3" selection-end-line="18807" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/search/js/react/browser.min.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/react.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -394,34 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="1683" column="5" selection-start-line="1683" selection-start-column="5" selection-end-line="1683" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="16047" column="42" lean-forward="true" selection-start-line="16047" selection-start-column="42" selection-end-line="16047" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="26" column="19278" lean-forward="true" selection-start-line="26" selection-start-column="19278" selection-end-line="26" selection-end-column="19278" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/reactApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.development.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/reactApp.js" />
     <entry file="file://$PROJECT_DIR$/search/js/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -436,31 +406,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1363">
-          <caret line="14200" column="10" lean-forward="true" selection-start-line="14200" selection-start-column="10" selection-end-line="14200" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="2367" column="10" selection-start-line="2367" selection-start-column="10" selection-end-line="2367" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/search/moment.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.js" />
     <entry file="file://$PROJECT_DIR$/search/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="73">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="119">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
         </state>
       </provider>
     </entry>
