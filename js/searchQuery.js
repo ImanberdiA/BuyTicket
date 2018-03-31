@@ -14,6 +14,8 @@ app.set('views', __dirname + '/views');
 
 let searchObject = new searchController.SearchController();
 
-app.get('/placeholder', searchObject.getListFlights);
+app.get('/searchTickets', searchObject.getListFlights);
 
 app.get('/', searchObject.index);
+
+app.get('/login', searchObject.login);
