@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchController.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="255">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -37,8 +38,8 @@
       <file leaf-file-name="searchService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/searchService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="260">
+              <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -69,8 +70,8 @@
         <option value="$PROJECT_DIR$/search/js/index.html" />
         <option value="$PROJECT_DIR$/search/searchQuery.js" />
         <option value="$PROJECT_DIR$/search/moment.js" />
-        <option value="$PROJECT_DIR$/search/searchController.js" />
         <option value="$PROJECT_DIR$/search/searchService.js" />
+        <option value="$PROJECT_DIR$/search/searchController.js" />
       </list>
     </option>
   </component>
@@ -172,12 +173,12 @@
       <workItem from="1522303533743" duration="38000" />
       <workItem from="1522303690411" duration="29693000" />
       <workItem from="1522394262609" duration="13215000" />
-      <workItem from="1522477690706" duration="1083000" />
+      <workItem from="1522477690706" duration="4906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90336000" />
+    <option name="totallyTimeSpent" value="94159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -197,7 +198,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32959327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24263674" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24263674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.27769986" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -431,15 +432,15 @@
     <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.js" />
     <entry file="file://$PROJECT_DIR$/search/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="260">
+          <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
