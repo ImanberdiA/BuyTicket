@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Вход в систему</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://localhost:1003">Music Player</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="http://localhost:1003/login">Войти</a></li>
+            <li><a href="http://localhost:1003/register">Регистрация</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <form method="POST" action="/signin" id='formaDel' class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+        <!--<form method="POST" action="/users/new">-->
+        <div class="w3-panel w3-green w3-round-xlarge">
+            <h5>Войти в систему</h5>
+        </div>
+        <div class="form-row">
+            <div>
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Email..." name="email">
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+                <input type="text" class="form-control" id="password" placeholder="Пароль..." name="password">
+            </div>
+        </div>
+        <input type="submit" class="w3-button w3-block w3-section w3-green w3-ripple w3-padding" value="ВОЙТИ"/>
+    </form>
+</div>
+
+</body>
+</html>

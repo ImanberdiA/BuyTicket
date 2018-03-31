@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/js/searchController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/searchQuery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/login.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/methods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/methods/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/binary-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/binary-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-map/source-map-consumer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/dist/source-map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/binary-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/binary-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map-consumer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/searchController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/searchQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/searchService.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/searchService.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,28 +32,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="searchQuery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="221">
+              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/search/searchController.js">
+      <file leaf-file-name="searchQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/searchController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="searchService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/searchService.js">
+        <entry file="file://$PROJECT_DIR$/js/searchService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="357">
               <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
             </state>
           </provider>
@@ -68,10 +96,14 @@
         <option value="$PROJECT_DIR$/search/js/react/babel.min.js" />
         <option value="$PROJECT_DIR$/search/js/index.ejs" />
         <option value="$PROJECT_DIR$/search/js/index.html" />
-        <option value="$PROJECT_DIR$/search/searchQuery.js" />
         <option value="$PROJECT_DIR$/search/moment.js" />
         <option value="$PROJECT_DIR$/search/searchService.js" />
         <option value="$PROJECT_DIR$/search/searchController.js" />
+        <option value="$PROJECT_DIR$/search/searchQuery.js" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
+        <option value="$PROJECT_DIR$/js/searchController.js" />
+        <option value="$PROJECT_DIR$/js/searchQuery.js" />
+        <option value="$PROJECT_DIR$/js/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -85,8 +117,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1561" />
-    <option name="y" value="-9" />
+    <option name="x" value="77" />
+    <option name="y" value="-8" />
     <option name="width" value="1575" />
     <option name="height" value="1100" />
   </component>
@@ -105,7 +137,13 @@
             <path>
               <item name="rsoikurs" type="b2602c69:ProjectViewProjectNode" />
               <item name="rsoikurs" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rsoikurs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rsoikurs" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rsoikurs" type="b2602c69:ProjectViewProjectNode" />
@@ -130,6 +168,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs\js" />
+      <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs" />
       <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs\search\frontend" />
       <recent name="C:\Users\Colibri\Documents\GitHub\rsoikurs\search" />
       <recent name="C:\Users\Colibri\WebstormProjects\rsoi\search" />
@@ -148,8 +188,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.Unnamed">
-    <configuration name="IndexReact" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/search/js/index.html" working-dir="$PROJECT_DIR$/search/js" />
-    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/search/searchQuery.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="IndexReact" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/js/views/login.hbs" working-dir="$PROJECT_DIR$/js/views" />
+    <configuration name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/js/searchQuery.js" working-dir="$PROJECT_DIR$" />
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$" />
     <list>
       <item itemvalue="Node.js.IndexReact" />
@@ -173,12 +213,12 @@
       <workItem from="1522303533743" duration="38000" />
       <workItem from="1522303690411" duration="29693000" />
       <workItem from="1522394262609" duration="13215000" />
-      <workItem from="1522477690706" duration="4906000" />
+      <workItem from="1522477690706" duration="13428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94159000" />
+    <option name="totallyTimeSpent" value="102681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,15 +230,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1274" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12813738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1772655" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32959327" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24263674" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16935484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.27769986" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -209,7 +250,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32819074" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,154 +278,154 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="43" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/index.html">
+    <entry file="file://$PROJECT_DIR$/js/views/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/index.html">
+    <entry file="file://$PROJECT_DIR$/js/views/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/index.html">
+    <entry file="file://$PROJECT_DIR$/js/views/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
@@ -403,6 +443,40 @@
     <entry file="file://$PROJECT_DIR$/search/js/react/browser.min.js" />
     <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.js" />
     <entry file="file://$PROJECT_DIR$/search/js/react/react.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.development.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js" />
+    <entry file="file://$PROJECT_DIR$/search/js/reactApp.js" />
+    <entry file="file://$PROJECT_DIR$/search/moment.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.js" />
+    <entry file="file://$PROJECT_DIR$/js/searchService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="334" column="11" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="111" column="2" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -410,37 +484,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/js/react/react.development.js" />
-    <entry file="file://$PROJECT_DIR$/search/js/react/react-dom.development.js" />
-    <entry file="file://$PROJECT_DIR$/search/js/react/babel.min.js" />
-    <entry file="file://$PROJECT_DIR$/search/js/reactApp.js" />
-    <entry file="file://$PROJECT_DIR$/search/js/index.html">
+    <entry file="file://$PROJECT_DIR$/js/views/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchQuery.js">
+    <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/moment.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.js" />
-    <entry file="file://$PROJECT_DIR$/search/searchService.js">
+    <entry file="file://$PROJECT_DIR$/js/searchQuery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="21" column="116" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/searchController.js">
+    <entry file="file://$PROJECT_DIR$/js/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="221">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
