@@ -1,6 +1,8 @@
 var searchService = require("./searchService"), searchServiceObject = new searchService.SearchService(), url = require('url');
 
 class SearchController {
+
+    // Функции паразиты записать в один большой функ.-конструктор, и те функции вызывать в searchQuery как объекты
         async index(req, res) {
             res.render('index', {});
         }
@@ -36,10 +38,8 @@ class SearchController {
             }
         }
 
-        async getListNearFlights(req, res)
-        {
+        async getListNearFlights(req, res){}
 
-        }
 }
 
 exports.SearchController = SearchController;
