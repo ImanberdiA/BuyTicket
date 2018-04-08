@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b24620af-4a8e-4fc5-96a1-677b047549fc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/searchController.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="searchController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/searchController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="102">
+              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -114,10 +113,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1272" />
-    <option name="y" value="-8" />
-    <option name="width" value="1937" />
-    <option name="height" value="1047" />
+    <option name="x" value="1271" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -212,11 +211,12 @@
       <workItem from="1522766419157" duration="1472000" />
       <workItem from="1522816291776" duration="818000" />
       <workItem from="1522825540510" duration="615000" />
+      <workItem from="1522935127018" duration="194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114959000" />
+    <option name="totallyTimeSpent" value="115153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -229,8 +229,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1274" y="-6" width="1549" height="837" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15785997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15719947" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -252,19 +253,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1772655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966975" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959327" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16935484" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39831698" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.27769986" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32959327" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -567,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/searchController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="102">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
