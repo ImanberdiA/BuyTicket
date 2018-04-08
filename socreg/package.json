@@ -1,0 +1,25 @@
+{
+  "name": "social-autorization",
+  "version": "1.0.0",
+  "description": "Term work by me",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www"
+  },
+  "author": "Imanberdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "www"
+  },
+  "homepage": "www",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  }
+}
