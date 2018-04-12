@@ -7,5 +7,8 @@ module.exports = {
     },
     mongodb: {
         dbURI:'mongodb://iman:87785526807alik@ds139219.mlab.com:39219/rsoi-kurs-iman'
+    },
+    session: {
+        cookieKey: 'bfdhbkjsjahbfdshnfkjdsmfkjsdjhnjnjnkjn'
     }
 };
