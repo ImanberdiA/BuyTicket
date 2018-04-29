@@ -11,7 +11,8 @@
         <nav>
             <ul class="nav nav-pills pull-right">
                 {{#if user}}
-                    <li role="presentation"><a href="/">{{user.name}}</a></li>
+                    <li><a href="/">Главная страница</a></li>
+                    <li><a href="/profile">Личный кабинет - {{user.username}}</a></li>
                     <li role="presentation"><a href="/users/logout">Выйти</a></li>
                 {{else}}
                     <li role="presentation"><a href="/users/login">Войти</a></li>
@@ -19,7 +20,6 @@
                 {{/if}}
             </ul>
         </nav>
-        <h3 class="text-muted">LoginApp_UI</h3>
     </div>
 
 

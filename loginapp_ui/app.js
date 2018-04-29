@@ -11,7 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
-// New Ones //
+// New Ones from SOCREG //
 const authRoutes = require('./routes/auth-routes');
 const profileRoutes = require('./routes/profile-routes');
 const passportSetup = require('./config/passport-setup');
@@ -19,8 +19,6 @@ const keys = require('./config/keys');
 const cookieSession = require('cookie-session');
 
 /////////////
-
-
 
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
@@ -44,7 +42,7 @@ app.use(cookieParser());
 // Set Static Folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// set up session cookies
+// set up session cookies -- SOCREG
 app.use(cookieSession({
     maxAge: 24 * 60 * 60 * 1000,
     keys: [keys.session.cookieKey]
@@ -62,16 +60,14 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// set up routes
-app.use('/auth1', authRoutes);
+// set up routes - SOCREG
+app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 
-// // create home route
+// // create home route -- SOCREG
 // app.get('/', (req, res) => {
 //     res.render('home', {user: req.user});
 // });
-
-
 
 // Express Validator
 app.use(expressValidator({
@@ -103,13 +99,11 @@ app.use(function (req, res, next) {
     next();
 });
 
-
-
 app.use('/', routes);
 app.use('/users', users);
 
 // Set Port
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3001));
 
 app.listen(app.get('port'), function(){
     console.log('Server started on port '+app.get('port'));
