@@ -44,6 +44,12 @@ app.use(cookieParser());
 // Set Static Folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+// set up session cookies
+app.use(cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: [keys.session.cookieKey]
+}));
+
 // Express Session
 app.use(session({
     secret: 'secret',
@@ -54,6 +60,18 @@ app.use(session({
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());
+
+
+// set up routes
+app.use('/auth1', authRoutes);
+app.use('/profile', profileRoutes);
+
+// // create home route
+// app.get('/', (req, res) => {
+//     res.render('home', {user: req.user});
+// });
+
+
 
 // Express Validator
 app.use(expressValidator({
