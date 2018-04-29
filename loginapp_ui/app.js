@@ -11,6 +11,17 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
+// New Ones //
+const authRoutes = require('./routes/auth-routes');
+const profileRoutes = require('./routes/profile-routes');
+const passportSetup = require('./config/passport-setup');
+const keys = require('./config/keys');
+const cookieSession = require('cookie-session');
+
+/////////////
+
+
+
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 
