@@ -1,0 +1,20 @@
+{
+  "name": "search_ticketa",
+  "version": "1.0.0",
+  "description": "Search Tickets Project By Imanberdi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imanberdi Abilkair",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "handlebars": "^4.0.11",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-dateonly": "^1.0.4",
+    "node-datetime": "^2.0.6"
+  }
+}

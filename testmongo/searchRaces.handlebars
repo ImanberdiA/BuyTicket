@@ -1,0 +1,29 @@
+<h2 class="page-header">Регистрация</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/race">
+    <div class="form-group">
+        <label>Город отправления</label>
+        <input type="text" class="form-control" placeholder="Город отправления" name="starting_point">
+    </div>
+    <div class="form-group">
+        <label>Город прибытия</label>
+        <input type="text" class="form-control" placeholder="Город прибытия" name="end_point">
+    </div>
+    <div class="form-group">
+        <label>Дата отправления</label>
+        <input type="text" class="form-control" placeholder="Дата отправления" name="flight_date">
+    </div>
+    <div class="form-group">
+        <label>Багаж</label>
+        <input type="text" class="form-control" placeholder="Багаж" name="baggage">
+    </div>
+    <div class="form-group">
+        <label>Класс обслуживания</label>
+        <input type="text" class="form-control" placeholder="Класс обслуживания" name="class_of_service">
+    </div>
+    <button type="submit" class="btn btn-default">Найти</button>
+</form>
