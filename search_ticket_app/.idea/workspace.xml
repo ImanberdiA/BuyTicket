@@ -17,10 +17,10 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state>
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
-                <marker date="1525187070836" expanded="true" signature="1058:2165" ph="..." />
+                <marker date="1525191291712" expanded="true" signature="1152:2262" ph="..." />
               </folding>
             </state>
           </provider>
@@ -29,8 +29,8 @@
       <file leaf-file-name="mngDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mngDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -38,8 +38,8 @@
       <file leaf-file-name="search_races.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/search_races.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="208">
+              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -47,8 +47,8 @@
       <file leaf-file-name="list_of_found_races.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/list_of_found_races.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="348">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -65,9 +65,9 @@
         <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/views/layouts/layout.handlebars" />
         <option value="$PROJECT_DIR$/views/searchRaces.handlebars" />
+        <option value="$PROJECT_DIR$/mngDB.js" />
         <option value="$PROJECT_DIR$/views/search_races.handlebars" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/mngDB.js" />
         <option value="$PROJECT_DIR$/views/list_of_found_races.handlebars" />
       </list>
     </option>
@@ -174,12 +174,12 @@
       <workItem from="1525159742962" duration="1312000" />
       <workItem from="1525161068891" duration="1177000" />
       <workItem from="1525171756028" duration="1534000" />
-      <workItem from="1525173523808" duration="10759000" />
+      <workItem from="1525173523808" duration="14507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31252000" />
+    <option name="totallyTimeSpent" value="35000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -189,7 +189,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22364673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22364673" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.25641027" />
@@ -221,7 +221,7 @@
         <state relative-caret-position="1173">
           <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
           <folding>
-            <marker date="1525187070836" expanded="true" signature="1058:2165" ph="..." />
+            <marker date="1525191291712" expanded="true" signature="1152:2262" ph="..." />
           </folding>
         </state>
       </provider>
@@ -245,7 +245,7 @@
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <marker date="1525187070836" expanded="true" signature="1058:2165" ph="..." />
+            <marker date="1525191291712" expanded="true" signature="1152:2262" ph="..." />
           </folding>
         </state>
       </provider>
@@ -331,32 +331,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/search_races.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="208">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mngDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state>
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
-            <marker date="1525187070836" expanded="true" signature="1058:2165" ph="..." />
+            <marker date="1525191291712" expanded="true" signature="1152:2262" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/list_of_found_races.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="348">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>

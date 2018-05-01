@@ -8,7 +8,8 @@ const RaceSchema = new Schema({
     baggage: {type: Number},
     class_of_service: {type: String},
     airline: {type: String},
-    travel_time: {type: String}
+    travel_time: {type: String},
+    cost: {type: Number}
 });
 
 const Race = module.exports = mongoose.model('race', RaceSchema);

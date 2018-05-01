@@ -28,6 +28,10 @@ app.get('/', function (req, res) {
     res.render('search_races');
 });
 
+app.post('/buyticket', function (req, res) {
+    console.log("njnj ", req.body.airline);
+});
+
 app.post('/race', function(req, res) {
     var starting_point = req.body.starting_point;
     var end_point = req.body.end_point;
@@ -61,7 +65,7 @@ app.post('/race', function(req, res) {
         Race.getRacesByDate(newRace, function (err, race) {
             if(err) throw err;
             if(race){
-                console.log(race);
+                // console.log(race);
                 res.render('list_of_found_races', {
                     data_races: race
                 });
