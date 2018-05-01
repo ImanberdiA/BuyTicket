@@ -34,7 +34,6 @@ app.post('/race', function(req, res) {
     var flight_date = req.body.flight_date;
     var baggage = req.body.baggage;
     var class_of_service = req.body.class_of_service;
-    console.log('flight_date', flight_date);
 
     // Validation
     req.checkBody('starting_point', 'Введите город отправления').notEmpty();
@@ -46,6 +45,7 @@ app.post('/race', function(req, res) {
     var errors = req.validationErrors();
 
     if(errors) {
+        // console.log('i am in shit');
         res.render('searchRaces',{
             errors:errors
         });
@@ -64,6 +64,7 @@ app.post('/race', function(req, res) {
                 console.log(race);
             }
         });
+        res.end();
     }
 
 
@@ -71,15 +72,13 @@ app.post('/race', function(req, res) {
     //     if(err) throw err;
     //     console.log(race);
     // });
-
-    res.sendStatus(200);
 });
 
 
 
 // Set Port
-app.set('port', (process.env.PORT || 1000));
+app.set('port', (process.env.PORT || 99));
 
 app.listen(app.get('port'), function(){
-    console.log('Server started on port '+app.get('port'));
+    console.log('Server started on port '+ app.get('port'));
 });
