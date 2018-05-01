@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.render('searchRaces');
+    res.render('search_races');
 });
 
 app.post('/race', function(req, res) {
@@ -47,7 +47,7 @@ app.post('/race', function(req, res) {
     if(errors) {
         // console.log('i am in shit');
         res.render('searchRaces',{
-            errors:errors
+            errors: errors
         });
     }else{
         var newRace = new Race({
@@ -62,9 +62,12 @@ app.post('/race', function(req, res) {
             if(err) throw err;
             if(race){
                 console.log(race);
+                res.render('list_of_found_races', {
+                    data_races: race
+                });
             }
         });
-        res.end();
+        // res.end();
     }
 
 
