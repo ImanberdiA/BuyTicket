@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/buyticket', function (req, res) {
-    console.log("njnj ", req.body.airline);
+    console.log("njnj ", req.body.cost);
 });
 
 app.post('/race', function(req, res) {

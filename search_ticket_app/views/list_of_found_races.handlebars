@@ -17,15 +17,14 @@
          <tbody>
          {{#each data_races}}
              <form method="post" action="/buyticket">
-             <tr>
-                 <td name="airline">{{this.airline}}</td>
-                 <div class="form-group">
-                    <td>{{this.travel_time}}</td>
-                    <td>{{this.cost}}</td>
-                 <div class="form-group">
-                    <td><input type="submit" class="btn btn-dark btn-block" value="Купить"></td>
-                 </div>
-             </tr>
+                 <tr>
+                     <td name="airline">{{this.airline}}</td>
+                     <div class="form-group">
+                        <td>{{this.travel_time}}</td>
+                        <td>{{this.cost}}</td>
+                        <td><input type="submit" class="btn btn-dark btn-block" value="Купить"></td>
+                     </div>
+                 </tr>
              </form>
          {{/each}}
      </tbody>
