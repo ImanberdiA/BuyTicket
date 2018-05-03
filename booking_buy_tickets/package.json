@@ -1,0 +1,31 @@
+{
+  "name": "search_ticketa",
+  "version": "1.0.0",
+  "description": "Search Tickets Project By Imanberdi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imanberdi Abilkair",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.1",
+    "connect": "^3.6.6",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "cookies": "^0.7.1",
+    "express": "*",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
+    "express-validator": "^5.1.2",
+    "handlebars": "^4.0.11",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-dateonly": "^1.0.4",
+    "node-datetime": "^2.0.6",
+    "set-cookie-parser": "^2.1.1"
+  }
+}
