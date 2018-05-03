@@ -14,6 +14,7 @@ var mongoose = require('mongoose');
 // New Ones from SOCREG //
 const authRoutes = require('./routes/auth-routes');
 const profileRoutes = require('./routes/profile-routes');
+const search_tickets_routes = require('./routes/search_tickets_routes');
 const passportSetup = require('./config/passport-setup');
 const keys = require('./config/keys');
 const cookieSession = require('cookie-session');
@@ -63,6 +64,7 @@ app.use(passport.session());
 // set up routes - SOCREG
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
+app.use('/searchTicket', search_tickets_routes);
 
 // // create home route -- SOCREG
 // app.get('/', (req, res) => {

@@ -13,7 +13,7 @@ router.get('/', authCheck, (req, res) => {
     res.render('profile', { user: req.user });
 });
 
-router.get('/pow', authCheck, (req, res) => {
+router.get('http://localhost:3001/porfile/pow', authCheck, (req, res) => {
     var query = querystring.stringify({
         "a": 1,
         "b": 2,

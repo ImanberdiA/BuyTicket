@@ -5,10 +5,28 @@ var path = require('path');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
+var cookieParser = require('cookie-parser');
+var Race = require('./mngDB');
 
 app.use(expressValidator());
+app.use(cookieParser());
 
-var Race = require('./mngDB');
+app.use(session({
+    secret: 'test',
+    saveUninitialized: false, // don't create session until something stored
+    resave: false, //don't save session if unmodified
+    store: new MongoStore({
+        url: 'mongodb://localhost/saveSessions'
+    })
+}));
+
+app.get('/searchTicket', function (req, res) {
+    req.session.varTest = 1;
+    console.log('SearchTicket: ', req.query);
+    res.end();
+});
 
 mongoose.connect('mongodb://localhost/testDB');
 

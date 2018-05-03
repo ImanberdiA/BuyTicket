@@ -1,21 +1,22 @@
-var express = require('express');
-var app = express();
-const session = require('express-session');
+var express = require('express'); //
+var app = express(); //
+var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var cookieParser = require('cookie-parser');
 
 app.use(cookieParser());
 app.use(session({
     secret: 'test',
-    resave: false,
+    saveUninitialized: false, // don't create session until something stored
+    resave: false, //don't save session if unmodified
     store: new MongoStore({
         url: 'mongodb://localhost/saveSessions'
     })
 }));
 
-app.get('/', function (req, res) {
+app.get('/searchTicket', function (req, res) {
     req.session.varTest = 1;
-     // console.log(req.query);
+     console.log(req.query);
     res.end();
 });
 
