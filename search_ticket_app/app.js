@@ -25,7 +25,7 @@ app.use(session({
 app.get('/searchTicket', function (req, res) {
     req.session.varTest = 1;
     console.log('SearchTicket: ', req.query);
-    res.end();
+    res.render('search_races');
 });
 
 mongoose.connect('mongodb://localhost/testDB');
@@ -42,12 +42,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', function (req, res) {
-    res.render('search_races');
-});
-
 app.post('/buyticket', function (req, res) {
-    console.log("njnj ", req.body.cost);
+    console.log("Cost ", req.body);
 });
 
 app.post('/race', function(req, res) {
@@ -83,9 +79,9 @@ app.post('/race', function(req, res) {
         Race.getRacesByDate(newRace, function (err, race) {
             if(err) throw err;
             if(race){
-                // console.log(race);
+                console.log(race);
                 res.render('list_of_found_races', {
-                    data_races: race
+                    data_races: race[0]
                 });
             }
         });

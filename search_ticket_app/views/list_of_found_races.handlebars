@@ -5,30 +5,11 @@
 </head>
 <body>
     {{#if data_races}}
-     <table class = "table table-bordered">
-         <thead class="thead-dark">
-              <tr class="active">
-                  <th scope="col">Авиакомпания</th>
-                  <th scope="col">Время в пути</th>
-                  <th scope="col">Стоимость</th>
-                  <th scope="col"></th>
-              </tr>
-         </thead>
-         <tbody>
-         {{#each data_races}}
-             <form method="post" action="/buyticket">
-                 <tr>
-                     <td name="airline">{{this.airline}}</td>
-                     <div class="form-group">
-                        <td>{{this.travel_time}}</td>
-                        <td>{{this.cost}}</td>
-                        <td><input type="submit" class="btn btn-dark btn-block" value="Купить"></td>
-                     </div>
-                 </tr>
-             </form>
-         {{/each}}
-     </tbody>
-      </table>
+        <form method="post" action="/buyticket">
+            ЗДЕСЬ НУЖНО РАЗОБРАТЬСЯ
+            <input type="text" name="cost" value="{{this.cost}}" readonly>
+            <input type="submit" class="btn btn-dark btn-block" value="Купить">
+        </form>
     {{/if}}
 </body>
 </html>

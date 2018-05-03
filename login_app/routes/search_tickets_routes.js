@@ -11,12 +11,14 @@ const authCheck = (req, res, next) => {
 
 router.get('/', authCheck, (req, res) => {
     var id_data = req.user.username.split(' ');
-    var name = id_data[0];
-    console.log(name);
+    var name = id_data[0], surname = id_data[1];
+    console.log('name ', name);
+    console.log('surname ', surname);
+
     //console.log(req.user);
     var query = querystring.stringify({
-        // "name": req.user.name,
-        // "email": req.user.email
+         "name": name,
+         "surname": surname
     });
     res.redirect('http://localhost:99/searchTicket/?' + query);
 });
