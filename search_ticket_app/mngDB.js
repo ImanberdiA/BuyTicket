@@ -5,6 +5,8 @@ const RaceSchema = new Schema({
     starting_point: { type: String },
     end_point: { type: String},
     flight_date: {type: String},
+    departure_time: {type: String},
+    boarding_time: {type: String},
     baggage: {type: Number},
     class_of_service: {type: String},
     airline: {type: String},

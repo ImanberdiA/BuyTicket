@@ -9,6 +9,7 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var cookieParser = require('cookie-parser');
 var Race = require('./mngDB');
+const querystring = require('querystring');
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -23,7 +24,7 @@ app.use(session({
 }));
 
 app.get('/searchTicket', function (req, res) {
-    req.session.varTest = 1;
+    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname};
     console.log('SearchTicket: ', req.query);
     res.render('search_races');
 });
@@ -43,7 +44,23 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/buyticket', function (req, res) {
-    console.log("Cost ", req.body);
+    console.log("Ticket id: ", req.body);
+    console.log("Session: ", req.session.varTest);
+
+    var ticketObj = req.body;
+    var allObj = Object.assign(ticketObj, req.session.varTest);
+    console.log('Common object: ', allObj);
+
+    var query = querystring.stringify({
+        "airline": allObj.airline,
+        "cost": allObj.cost,
+        "departure_time": allObj.departure_time,
+        "boarding_time": allObj.boarding_time,
+        "travel_time": allObj.travel_time,
+        "clientName": allObj.clientName,
+        "clientSurname": allObj.clientSurname
+    });
+    res.redirect("http://google.com/?" + query);
 });
 
 app.post('/race', function(req, res) {
@@ -81,7 +98,7 @@ app.post('/race', function(req, res) {
             if(race){
                 console.log(race);
                 res.render('list_of_found_races', {
-                    data_races: race[0]
+                    data_races: race
                 });
             }
         });

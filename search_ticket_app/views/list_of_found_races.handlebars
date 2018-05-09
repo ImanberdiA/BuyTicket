@@ -5,11 +5,34 @@
 </head>
 <body>
     {{#if data_races}}
-        <form method="post" action="/buyticket">
-            ЗДЕСЬ НУЖНО РАЗОБРАТЬСЯ
-            <input type="text" name="cost" value="{{this.cost}}" readonly>
-            <input type="submit" class="btn btn-dark btn-block" value="Купить">
-        </form>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Авиакомпания</th>
+                    <th scope="col">Стоимость</th>
+                    <th scope="col">Вылет</th>
+                    <th scope="col">Посадка</th>
+                    <th scope="col">Время в пути</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each data_races}}
+                <tr>
+                    <form method="post" action="/buyticket">
+                        <td><input class="form-control" type="text" name="airline" value="{{this.airline}}" readonly/></td>
+                        <td><input class="form-control" type="text" name="cost" value="{{this.cost}}" readonly/></td>
+                        <td><input class="form-control" type="text" name="departure_time" value="{{this.departure_time}}" readonly/></td>
+                        <td><input class="form-control" type="text" name="boarding_time" value="{{this.boarding_time}}" readonly/></td>
+                        <td><input class="form-control" type="text" name="travel_time" value="{{this.travel_time}}" readonly/></td>
+                        <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
+                    </form>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    {{else}}
+        <h3>Нет подходящих рейсов</h3>
     {{/if}}
 </body>
 </html>

@@ -22,6 +22,7 @@
     "mongodb": "*",
     "mongoose": "*",
     "mongoose-dateonly": "^1.0.4",
-    "node-datetime": "^2.0.6"
+    "node-datetime": "^2.0.6",
+    "querystring": "^0.2.0"
   }
 }
