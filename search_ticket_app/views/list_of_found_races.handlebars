@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 </head>
 <body>
+    {{#if errors}}
+        <h1>{{this}}</h1>
+    {{/if}}
     {{#if data_races}}
         <table class="table table-hover">
             <thead class="thead-dark">

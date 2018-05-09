@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<%if (booking_data){ %>
+
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.airline%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.cost%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.departure_time%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.boarding_time%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.travel_time%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.clientName%>"/>
+    <input class="form-control" type="text" name="airline" value="<%= booking_data.clientSurname%>"/>
+
+<% } %>
+</body>
+</html>

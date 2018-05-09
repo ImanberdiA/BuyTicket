@@ -23,12 +23,6 @@ app.use(session({
     })
 }));
 
-app.get('/searchTicket', function (req, res) {
-    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname};
-    console.log('SearchTicket: ', req.query);
-    res.render('search_races');
-});
-
 mongoose.connect('mongodb://localhost/testDB');
 
 // View Engine
@@ -42,6 +36,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // BodyParser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/searchTicket', function (req, res) {
+    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname};
+    console.log('SearchTicket: ', req.query);
+    res.render('search_races');
+});
 
 app.post('/buyticket', function (req, res) {
     console.log("Ticket id: ", req.body);
@@ -81,7 +81,7 @@ app.post('/race', function(req, res) {
 
     if(errors) {
         // console.log('i am in shit');
-        res.render('searchRaces',{
+        res.render('list_of_found_races',{
             errors: errors
         });
     }else{
