@@ -20,7 +20,7 @@ router.get('/', authCheck, (req, res) => {
          "name": name,
          "surname": surname
     });
-    res.redirect('http://localhost:99/searchTicket/?' + query);
+    res.redirect('http://localhost:3000/searchTicket/?' + query);
 });
 
 module.exports = router;

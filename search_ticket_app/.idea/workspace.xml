@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_races.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search_races.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/search_races.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="238">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -41,13 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            <state relative-caret-position="291">
+              <caret line="99" column="38" lean-forward="true" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
               <folding>
-                <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+                <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
               </folding>
             </state>
           </provider>
@@ -67,8 +67,8 @@
         <option value="$PROJECT_DIR$/views/search_races.handlebars" />
         <option value="$PROJECT_DIR$/mngDB.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/list_of_found_races.handlebars" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -86,7 +86,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -124,7 +124,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../login_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../booking_buy_tickets" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -181,23 +181,23 @@
       <workItem from="1525516188053" duration="675000" />
       <workItem from="1525797838220" duration="3287000" />
       <workItem from="1525843797867" duration="10000" />
-      <workItem from="1525873936557" duration="7136000" />
+      <workItem from="1525873936557" duration="8272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64561000" />
+    <option name="totallyTimeSpent" value="65697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14606741" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14606741" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27492878" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27492878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.25641027" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -242,7 +242,7 @@
         <state relative-caret-position="1326">
           <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -273,7 +273,7 @@
         <state relative-caret-position="1326">
           <caret line="78" column="59" lean-forward="true" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -311,7 +311,7 @@
         <state relative-caret-position="306">
           <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -342,7 +342,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="76" lean-forward="true" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -373,7 +373,7 @@
         <state relative-caret-position="510">
           <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -397,7 +397,7 @@
         <state relative-caret-position="510">
           <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -414,7 +414,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -445,7 +445,7 @@
         <state relative-caret-position="1173">
           <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -469,7 +469,7 @@
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
           </folding>
         </state>
       </provider>
@@ -560,13 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/search_races.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-          <folding>
-            <marker date="1525880399167" expanded="true" signature="2341:3448" ph="..." />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -577,10 +574,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/search_races.handlebars">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="291">
+          <caret line="99" column="38" lean-forward="true" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding>
+            <marker date="1525881989461" expanded="true" signature="2353:3460" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

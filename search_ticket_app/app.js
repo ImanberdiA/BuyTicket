@@ -60,7 +60,7 @@ app.post('/buyticket', function (req, res) {
         "clientName": allObj.clientName,
         "clientSurname": allObj.clientSurname
     });
-    res.redirect("http://google.com/?" + query);
+    res.redirect("http://localhost:3002/booking/?" + query);
 });
 
 app.post('/race', function(req, res) {
@@ -115,7 +115,7 @@ app.post('/race', function(req, res) {
 
 
 // Set Port
-app.set('port', (process.env.PORT || 99));
+app.set('port', (process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){
     console.log('Server started on port '+ app.get('port'));
