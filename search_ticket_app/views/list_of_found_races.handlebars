@@ -10,6 +10,7 @@
         <table class="table table-hover">
             <thead class="thead-dark">
                 <tr>
+                    <th scope="col">Номер билета</th>
                     <th scope="col">Авиакомпания</th>
                     <th scope="col">Стоимость</th>
                     <th scope="col">Вылет</th>
@@ -22,6 +23,7 @@
             {{#each data_races}}
                 <tr>
                     <form method="post" action="/buyticket">
+                        <td><input class="form-control" type="text" name="ticket_number" value="{{this._id}}" readonly/></td>
                         <td><input class="form-control" type="text" name="airline" value="{{this.airline}}" readonly/></td>
                         <td><input class="form-control" type="text" name="cost" value="{{this.cost}}" readonly/></td>
                         <td><input class="form-control" type="text" name="departure_time" value="{{this.departure_time}}" readonly/></td>

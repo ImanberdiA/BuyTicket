@@ -38,28 +38,32 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/searchTicket', function (req, res) {
-    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname, clientEmail: req.query.email};
-    console.log('SearchTicket: ', req.query);
+    // req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname, clientEmail: req.query.email};
+    req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
+    // console.log('SearchTicket: ', req.query);
     res.render('search_races');
 });
 
 app.post('/buyticket', function (req, res) {
     console.log("Ticket id: ", req.body);
-    console.log("Session: ", req.session.varTest);
+    console.log("Session: ", req.session.loginAppSession);
 
     var ticketObj = req.body;
-    var allObj = Object.assign(ticketObj, req.session.varTest);
-    console.log('Common object: ', allObj);
+    var allObj = Object.assign(ticketObj, req.session.loginAppSession);
+    // console.log('Common object: ', allObj);
 
     var query = querystring.stringify({
-        "airline": allObj.airline,
-        "cost": allObj.cost,
-        "departure_time": allObj.departure_time,
-        "boarding_time": allObj.boarding_time,
-        "travel_time": allObj.travel_time,
-        "clientName": allObj.clientName,
-        "clientSurname": allObj.clientSurname,
-        "clientEmail": allObj.clientEmail
+        "_idRace": allObj.ticket_number,
+        "_idUser": allObj.UserIdFromLoginApp
+
+        // "airline": allObj.airline,
+        // "cost": allObj.cost,
+        // "departure_time": allObj.departure_time,
+        // "boarding_time": allObj.boarding_time,
+        // "travel_time": allObj.travel_time,
+        // "clientName": allObj.clientName,
+        // "clientSurname": allObj.clientSurname,
+        // "clientEmail": allObj.clientEmail
     });
     res.redirect("http://localhost:3002/booking/?" + query);
 });
@@ -96,7 +100,7 @@ app.post('/race', function(req, res) {
         Race.getRacesByDate(newRace, function (err, race) {
             if(err) throw err;
             if(race){
-                console.log(race);
+                // console.log("Все рейсы соответ. условиям ", race);
                 res.render('list_of_found_races', {
                     data_races: race
                 });
@@ -110,6 +114,11 @@ app.post('/race', function(req, res) {
     //     console.log(race);
     // });
 });
+
+app.get('/tickets', function (req, res) {
+
+});
+
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));

@@ -23,6 +23,7 @@
     "express-sessions": "^1.0.6",
     "express-validator": "^5.2.0",
     "handlebars": "^4.0.11",
+    "http": "0.0.0",
     "mongodb": "*",
     "mongoose": "*",
     "mongoose-dateonly": "^1.0.4",

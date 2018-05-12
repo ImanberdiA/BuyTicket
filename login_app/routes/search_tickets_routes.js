@@ -23,11 +23,12 @@ router.get('/', authCheck, (req, res) => {
         });
     }else{
         console.log('I am here');
-        console.log(req.user);
+        console.log(req.user._doc._id);
         query = querystring.stringify({
-            "name": req.user._doc.name,
-            "surname": req.user._doc.surname,
-            "email": req.user._doc.email
+            "_id": req.user._doc._id.toString()
+            // "name": req.user._doc.name,
+            // "surname": req.user._doc.surname,
+            // "email": req.user._doc.email
         });
     }
 

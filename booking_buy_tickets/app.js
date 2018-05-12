@@ -5,6 +5,7 @@ var exphbs = require('express-handlebars');
 var expressValidator = require('express-validator');
 var path = require('path');
 var bodyParser = require('body-parser');
+var http = require('http');
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -20,7 +21,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/booking', function (req, res) {
-    //console.log(req.query);
+    console.log(req.query);
+
+    // http.request({host: '', path: }).end();
+
     res.render('booking_buy', {
         booking_data: req.query
     });
@@ -46,7 +50,11 @@ app.post('/buy', function (req, res) {
 
     var errors = req.validationErrors();
 
-    if
+    // if(erros){
+    //
+    // }else{
+    //     var newBuyingTicket =
+    // }
 
 });
 
