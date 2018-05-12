@@ -19,8 +19,6 @@ const passportSetup = require('./config/passport-setup');
 const keys = require('./config/keys');
 const cookieSession = require('cookie-session');
 
-/////////////
-
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 

@@ -23,56 +23,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/booking', function (req, res) {
     // console.log(req.query);
-    var str = '', userDataObj = '';
-
-    // const options = {
-    //     host: 'localhost',
-    //     port: 3000,
-    //     path: '/tickets/?id='+req.query._idRace
-    // };
-    //
-    // http.request(options, (response) => {
-    //     response.on('data', (chunk) => {
-    //         str += chunk;
-    //     });
-    //
-    //     response.on('end', function () {
-    //         userDataObj = JSON.parse(str);
-    //         // console.log(userDataObj);
-    //         res.render('booking_buy', {
-    //             booking_data: userDataObj
-    //         });
-    //     });
-    // }).end();
 
     request('http://localhost:3000/tickets/?id='+req.query._idRace, function (error, response, body) {
-        console.log('race - ', body);
-        var currentTicketObj = JSON.parse(body), currentUserObj = '';
+        var currentTicketObj = JSON.parse(body);
         request('http://localhost:3001/users/userId/?id='+req.query._idUser, function (err, respon, bdy) {
-            currentUserObj = JSON.parse(bdy);
-        });
-
-
-
-        res.render('booking_buy', {
-            booking_data: userDataObj
+            var currentUserObj = JSON.parse(bdy);
+            var userDataObj = Object.assign(currentTicketObj, currentUserObj);
+            res.render('booking_buy', {
+                booking_data: userDataObj
+            });
         });
     });
-
-    //
-    // http.request(optsUser, (response) => {
-    //     response.on('data', (chunk) => {
-    //         str += chunk;
-    //     });
-    //     response.on('end', function () {
-    //          userDataObj = JSON.parse(str);
-    //          console.log(userDataObj);
-    //          // res.render('booking_buy', {
-    //          //     booking_data: userDataObj
-    //          // });
-    //     });
-    // }).end();
-
 });
 
 app.post('/buy', function (req, res) {

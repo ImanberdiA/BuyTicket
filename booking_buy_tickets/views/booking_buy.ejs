@@ -19,8 +19,8 @@
                 <td><b>Время в пути</b><input class="form-control" type="text" name="travel_time" value="<%= booking_data.travel_time%>" readonly/></td>
             </tr>
             <tr>
-                <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.clientName%>"/></td>
-                <td><b>Фамилия пассажира</b><input class="form-control" type="text" name="clientSurname" value="<%= booking_data.clientSurname%>"/></td>
+                <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.name%>"/></td>
+                <td><b>Фамилия пассажира</b><input class="form-control" type="text" name="clientSurname" value="<%= booking_data.surname%>"/></td>
                 <td><b>Пол</b><input class="form-control" type="text" name="gender"/></td>
                 <td><b>Дата рождения</b><input class="form-control" type="text" name="birth_date"/></td>
                 <td><b>Гражданство</b><input class="form-control" type="text" name="citizenship"/></td>
@@ -29,7 +29,7 @@
                 <td><b>№ документа</b><input class="form-control" type="text" name="document_number"/></td>
                 <td><b>Срок действия</b><input class="form-control" type="text" name="validity"/></td>
                 <td><b>Номер телефона</b><input class="form-control" type="text" name="phone_number"/></td>
-                <td><b>Электронная почта</b><input class="form-control" type="text" name="email" value="<%= booking_data.clientEmail%>"/></td>
+                <td><b>Электронная почта</b><input class="form-control" type="text" name="email" value="<%= booking_data.email%>"/></td>
             </tr>
             <tr>
                 <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
