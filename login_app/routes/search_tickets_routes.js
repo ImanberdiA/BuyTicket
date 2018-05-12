@@ -33,21 +33,6 @@ router.get('/', authCheck, (req, res) => {
     }
 
     res.redirect('http://localhost:3000/searchTicket/?' + query);
-
-
-
-
-    //
-    // var id_data = req.user.username.split(' ');
-    // var name = id_data[0], surname = id_data[1];
-    // console.log('name ', name);
-    // console.log('surname ', surname);
-
-    // //console.log(req.user);
-    // var query = querystring.stringify({
-    //      "name": name,
-    //      "surname": surname
-    // });
 });
 
 module.exports = router;

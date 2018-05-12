@@ -100,17 +100,17 @@ router.get('/logout', function(req, res){
 });
 
 
-router.get('/uss', function (req, res) {
+router.get('/userId', function (req, res) {
     console.log(req.query.id);
     var user = new User({
         _id: req.query.id
     });
 
-    User.getUserById(user, function (err, user) {
+    User.getUserById(req.query.id, function (err, user) {
         if(err) throw err;
         if(user){
-            console.log('User is ', user[0]);
-            res.send(user[0]);
+            console.log('User is ', user);
+            res.send(user);
         }
     });
 });
