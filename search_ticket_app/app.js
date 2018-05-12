@@ -116,7 +116,16 @@ app.post('/race', function(req, res) {
 });
 
 app.get('/tickets', function (req, res) {
+    var race = new Race({
+        _id: req.query.id
+    });
 
+    Race.getRaceById(race, function (err, race) {
+       if(err) throw err;
+       if(race){
+           res.send(race[0]);
+       }
+    });
 });
 
 

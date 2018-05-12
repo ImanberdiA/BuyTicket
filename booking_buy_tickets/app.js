@@ -21,13 +21,28 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/booking', function (req, res) {
-    console.log(req.query);
+    // console.log(req.query);
+    var str = '', userDataObj = '';
 
-    // http.request({host: '', path: }).end();
+    const options = {
+        host: 'localhost',
+        port: 3000,
+        path: '/tickets/?id='+req.query._idRace
+    };
 
-    res.render('booking_buy', {
-        booking_data: req.query
-    });
+    http.request(options, (response) => {
+        response.on('data', (chunk) => {
+            str += chunk;
+        });
+
+        response.on('end', function () {
+            userDataObj = JSON.parse(str);
+            // console.log(userDataObj);
+            res.render('booking_buy', {
+                booking_data: userDataObj
+            });
+        });
+    }).end();
 });
 
 app.post('/buy', function (req, res) {

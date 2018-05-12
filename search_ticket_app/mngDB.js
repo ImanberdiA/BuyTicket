@@ -20,6 +20,10 @@ module.exports.createRace = function (newRace, callback) {
     newRace.save(callback);
 };
 
-module.exports.getRacesByDate = function (newRace, callback) {
-    Race.find({$and:[{starting_point: newRace.starting_point}, {end_point: newRace.end_point}, {flight_date: newRace.flight_date}, {baggage: newRace.baggage}, {class_of_service: newRace.class_of_service}]}, callback);
+module.exports.getRacesByDate = function (race, callback) {
+    Race.find({$and:[{starting_point: race.starting_point}, {end_point: race.end_point}, {flight_date: race.flight_date}, {baggage: race.baggage}, {class_of_service: race.class_of_service}]}, callback);
+};
+
+module.exports.getRaceById= function (race, callback) {
+    Race.find({_id: race._id}, callback);
 };

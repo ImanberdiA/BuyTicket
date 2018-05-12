@@ -99,4 +99,20 @@ router.get('/logout', function(req, res){
     res.redirect('/users/login');
 });
 
+
+router.get('/uss', function (req, res) {
+    console.log(req.query.id);
+    var user = new User({
+        _id: req.query.id
+    });
+
+    User.getUserById(user, function (err, user) {
+        if(err) throw err;
+        if(user){
+            console.log('User is ', user[0]);
+            res.send(user[0]);
+        }
+    });
+});
+
 module.exports = router;
