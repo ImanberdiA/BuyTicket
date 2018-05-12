@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/searchTicket', function (req, res) {
-    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname};
+    req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname, clientEmail: req.query.email};
     console.log('SearchTicket: ', req.query);
     res.render('search_races');
 });
@@ -58,7 +58,8 @@ app.post('/buyticket', function (req, res) {
         "boarding_time": allObj.boarding_time,
         "travel_time": allObj.travel_time,
         "clientName": allObj.clientName,
-        "clientSurname": allObj.clientSurname
+        "clientSurname": allObj.clientSurname,
+        "clientEmail": allObj.clientEmail
     });
     res.redirect("http://localhost:3002/booking/?" + query);
 });
@@ -80,7 +81,6 @@ app.post('/race', function(req, res) {
     var errors = req.validationErrors();
 
     if(errors) {
-        // console.log('i am in shit');
         res.render('list_of_found_races',{
             errors: errors
         });
@@ -105,14 +105,11 @@ app.post('/race', function(req, res) {
         // res.end();
     }
 
-
     // Race.createRace(newRace, function (err, race) {
     //     if(err) throw err;
     //     console.log(race);
     // });
 });
-
-
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));

@@ -18,16 +18,16 @@ router.get('/login', function(req, res){
 // Register User
 router.post('/register', function(req, res){
     var name = req.body.name;
+    var surname = req.body.surname;
     var email = req.body.email;
-    var username = req.body.username;
     var password = req.body.password;
     var password2 = req.body.password2;
 
     // Validation
     req.checkBody('name', 'Введите имя').notEmpty();
+    req.checkBody('surname', 'Введите фамилию').notEmpty();
     req.checkBody('email', 'Введите Email').notEmpty();
     req.checkBody('email', 'Email не совпадают').isEmail();
-    req.checkBody('username', 'Введите имя пользователя').notEmpty();
     req.checkBody('password', 'Введите пароль').notEmpty();
     req.checkBody('password2', 'Пароль не совпадает').equals(req.body.password);
 
@@ -40,8 +40,8 @@ router.post('/register', function(req, res){
     } else {
         var newUser = new User({
             name: name,
+            surname: surname,
             email:email,
-            username: username,
             password: password
         });
 
@@ -57,8 +57,8 @@ router.post('/register', function(req, res){
 });
 
 passport.use(new LocalStrategy(
-    function(username, password, done) {
-        User.getUserByUsername(username, function(err, user){
+    function(email, password, done) {
+        User.getUserByUsername(email, function(err, user){
             if(err) throw err;
             if(!user){
                 return done(null, false, {message: 'Неизвестный пользователь!'});

@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 <%if (booking_data){ %>
-
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.airline%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.cost%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.departure_time%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.boarding_time%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.travel_time%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.clientName%>"/>
-    <input class="form-control" type="text" name="airline" value="<%= booking_data.clientSurname%>"/>
-
+<table class="table table-hover">
+    <thead>
+    </thead>
+    <tbody>
+        <form method="post" action="/buy">
+            <tr>
+                <td><b>Авиакомпания</b><input class="form-control" type="text" name="airline" value="<%= booking_data.airline%>" readonly/></td>
+                <td><b>Стоимость</b><input class="form-control" type="text" name="cost" value="<%= booking_data.cost%>" readonly/></td>
+                <td><b>Время вылета</b><input class="form-control" type="text" name="departure_time" value="<%= booking_data.departure_time%>" readonly/></td>
+                <td><b>Время посадки</b><input class="form-control" type="text" name="boarding_time" value="<%= booking_data.boarding_time%>" readonly/></td>
+                <td><b>Время в пути</b><input class="form-control" type="text" name="travel_time" value="<%= booking_data.travel_time%>" readonly/></td>
+            </tr>
+            <tr>
+                <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.clientName%>"/></td>
+                <td><b>Фамилия пассажира</b><input class="form-control" type="text" name="clientSurname" value="<%= booking_data.clientSurname%>"/></td>
+                <td><b>Пол</b><input class="form-control" type="text" name="gender"/></td>
+                <td><b>Дата рождения</b><input class="form-control" type="text" name="birth_date"/></td>
+                <td><b>Гражданство</b><input class="form-control" type="text" name="citizenship"/></td>
+            </tr>
+            <tr>
+                <td><b>№ документа</b><input class="form-control" type="text" name="document_number"/></td>
+                <td><b>Срок действия</b><input class="form-control" type="text" name="validity"/></td>
+                <td><b>Номер телефона</b><input class="form-control" type="text" name="phone_number"/></td>
+                <td><b>Электронная почта</b><input class="form-control" type="text" name="email" value="<%= booking_data.clientEmail%>"/></td>
+            </tr>
+            <tr>
+                <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
+            </tr>
+        </form>
+    </tbody>
+</table>
 <% } %>
 </body>
 </html>
+

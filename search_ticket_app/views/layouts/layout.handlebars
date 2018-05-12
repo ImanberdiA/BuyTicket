@@ -10,14 +10,9 @@
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right">
-                {{#if user}}
-                    <li><a href="/">Главная страница</a></li>
-                    <li><a href="http://localhost:3001/profile">Личный кабинет - {{user.username}}</a></li>
-                    <li role="presentation"><a href="http://localhost:3001//users/logout">Выйти</a></li>
-                {{else}}
-                    <li role="presentation"><a href="http://localhost:3001/users/login">Войти</a></li>
-                    <li role="presentation"><a href="http://localhost:3001/users/register">Регистрация</a></li>
-                {{/if}}
+                <li><a href="http://localhost:3001/">Главная страница</a></li>
+                <li><a href="http://localhost:3001/profile">Личный кабинет - {{user.username}}</a></li>
+                <li role="presentation"><a href="http://localhost:3001/users/logout">Выйти</a></li>
             </ul>
         </nav>
     </div>

@@ -13,15 +13,15 @@ router.get('/', authCheck, (req, res) => {
     res.render('profile', { user: req.user });
 });
 
-router.get('http://localhost:3001/porfile/pow', authCheck, (req, res) => {
-    var query = querystring.stringify({
-        "a": 1,
-        "b": 2,
-        "valid":"your string here"
-    });
-    res.redirect('http://localhost:400/?' + query);
-
-    // res.render('profile', { user: req.user });
-});
+// router.get('http://localhost:3001/porfile/pow', authCheck, (req, res) => {
+//     var query = querystring.stringify({
+//         "a": 1,
+//         "b": 2,
+//         "valid":"your string here"
+//     });
+//     res.redirect('http://localhost:400/?' + query);
+//
+//     // res.render('profile', { user: req.user });
+// });
 
 module.exports = router;
