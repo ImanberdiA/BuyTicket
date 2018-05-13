@@ -80,13 +80,37 @@ app.post('/buy', function (req, res) {
 
         BookingTicket.createBookingTicket(newBookingTicket, function (err, booking_ticket) {
             if(err) throw err;
-            console.log('New Booking Ticket ', booking_ticket);
+            console.log('New Booking Ticket ', booking_ticket._id);
 
-            res.render('booking_buy',{
-                success: 'BRON PROSHLA'
+            request('http://localhost:3004/bank/?idBt='+booking_ticket._id, function (error, response, body) {
+                if(error){
+                    res.render('booking_buy',{
+                        success: 'OSHIBKA PRI POKUPKE'
+                    });
+                }else{
+                    console.log('BODY ', body);
+                    res.render('booking_buy',{
+                        success: 'POKUPKA PROSHLA I VASH EL. BILET'
+                    });
+                }
             });
+
         });
     }
+});
+
+// Return data of current ticket to bank_sim by ticket_id
+app.get('/ticket_info', function (req, res) {
+    var ticket = new BookingTicket({
+        _id: req.query._id
+    });
+    BookingTicket.getTicketById(ticket, function (err, ticket) {
+        if(err) throw err;
+        if(ticket) {
+            // console.log(ticket);
+            res.send(ticket);
+        }
+    });
 });
 
 

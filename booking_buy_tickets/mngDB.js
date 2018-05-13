@@ -18,3 +18,7 @@ const BookingTicket = module.exports = mongoose.model('bookingrace', BookingTick
 module.exports.createBookingTicket = function (newBookingTicket, callback) {
     newBookingTicket.save(callback);
 };
+
+module.exports.getTicketById = function (ticket, callback) {
+    BookingTicket.find({_id: ticket._id}, callback);
+};
