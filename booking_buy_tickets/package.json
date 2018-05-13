@@ -25,7 +25,7 @@
     "handlebars": "^4.0.11",
     "http": "0.0.0",
     "mongodb": "*",
-    "mongoose": "*",
+    "mongoose": "^5.1.0",
     "mongoose-dateonly": "^1.0.4",
     "node-datetime": "^2.0.6",
     "path": "^0.12.7",

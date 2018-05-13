@@ -38,9 +38,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/searchTicket', function (req, res) {
-    // req.session.varTest = {clientName: req.query.name, clientSurname: req.query.surname, clientEmail: req.query.email};
     req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
-    // console.log('SearchTicket: ', req.query);
     res.render('search_races');
 });
 
@@ -55,15 +53,6 @@ app.post('/buyticket', function (req, res) {
     var query = querystring.stringify({
         "_idRace": allObj.ticket_number,
         "_idUser": allObj.UserIdFromLoginApp
-
-        // "airline": allObj.airline,
-        // "cost": allObj.cost,
-        // "departure_time": allObj.departure_time,
-        // "boarding_time": allObj.boarding_time,
-        // "travel_time": allObj.travel_time,
-        // "clientName": allObj.clientName,
-        // "clientSurname": allObj.clientSurname,
-        // "clientEmail": allObj.clientEmail
     });
     res.redirect("http://localhost:3002/booking/?" + query);
 });
@@ -106,13 +95,7 @@ app.post('/race', function(req, res) {
                 });
             }
         });
-        // res.end();
     }
-
-    // Race.createRace(newRace, function (err, race) {
-    //     if(err) throw err;
-    //     console.log(race);
-    // });
 });
 
 app.get('/tickets', function (req, res) {

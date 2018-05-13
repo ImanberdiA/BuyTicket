@@ -7,9 +7,13 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var http = require('http');
 var request = require('request');
+var BookingTicket = require('./mngDB');
+var mongoose = require('mongoose');
 
 app.use(expressValidator());
 app.use(cookieParser());
+
+mongoose.connect('mongodb://localhost/booking_tickets');
 
 // View Engine
 app.set('view engine', 'ejs');
@@ -56,12 +60,33 @@ app.post('/buy', function (req, res) {
 
     var errors = req.validationErrors();
 
-    // if(erros){
-    //
-    // }else{
-    //     var newBuyingTicket =
-    // }
+    if(errors){
+        res.render('booking_buy', {
+            errors: errors
+        });
+    }else{
+        console.log("I AM HEREEEE");
+        var newBookingTicket = new BookingTicket({
+            clientName: clientName,
+            clientSurname: clientSurname,
+            gender: gender,
+            birth_date: birth_date,
+            citizenship: citizenship,
+            document_number: document_number,
+            validity: validity,
+            phone_number: phone_number,
+            email: email
+        });
 
+        BookingTicket.createBookingTicket(newBookingTicket, function (err, booking_ticket) {
+            if(err) throw err;
+            console.log('New Booking Ticket ', booking_ticket);
+
+            res.render('booking_buy',{
+                success: 'BRON PROSHLA'
+            });
+        });
+    }
 });
 
 

@@ -5,7 +5,16 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-<%if (booking_data){ %>
+
+
+<%if (locals.success){ %>
+<b><%= success%></b>
+<% } %>
+
+<%if (locals.errors){ %>
+    <b><%= errors%></b>
+<% } %>
+<%if (locals.booking_data){ %>
 <table class="table table-hover">
     <thead>
     </thead>
