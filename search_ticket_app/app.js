@@ -37,11 +37,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// SearchTicket function
 app.get('/searchTicket', function (req, res) {
     req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
     res.render('search_races');
 });
 
+// BuyTicket function
 app.post('/buyticket', function (req, res) {
     // console.log("Ticket id: ", req.body);
     // console.log("Session: ", req.session.loginAppSession);
@@ -57,7 +59,8 @@ app.post('/buyticket', function (req, res) {
     res.redirect("http://localhost:3002/booking/?" + query);
 });
 
-app.post('/race', function(req, res) {
+// Races function
+app.post('/races', function(req, res) {
     var starting_point = req.body.starting_point;
     var end_point = req.body.end_point;
     var flight_date = req.body.flight_date;
