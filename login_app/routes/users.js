@@ -100,8 +100,7 @@ router.get('/logout', function(req, res){
 });
 
 
-router.get('/userId', function (req, res) {
-    console.log(req.query.id);
+router.get('/user', function (req, res) {
     var user = new User({
         _id: req.query.id
     });
@@ -109,8 +108,12 @@ router.get('/userId', function (req, res) {
     User.getUserById(req.query.id, function (err, user) {
         if(err) throw err;
         if(user){
-            console.log('User is ', user);
-            res.send(user);
+            var userUpdated = {
+                "name": user.name,
+                "surname": user.surname,
+                "email": user.email
+            };
+            res.send(userUpdated);
         }
     });
 });

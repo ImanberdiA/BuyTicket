@@ -43,8 +43,8 @@ app.get('/searchTicket', function (req, res) {
 });
 
 app.post('/buyticket', function (req, res) {
-    console.log("Ticket id: ", req.body);
-    console.log("Session: ", req.session.loginAppSession);
+    // console.log("Ticket id: ", req.body);
+    // console.log("Session: ", req.session.loginAppSession);
 
     var ticketObj = req.body;
     var allObj = Object.assign(ticketObj, req.session.loginAppSession);
@@ -105,8 +105,22 @@ app.get('/tickets', function (req, res) {
 
     Race.getRaceById(race, function (err, race) {
        if(err) throw err;
+
        if(race){
-           res.send(race[0]);
+           var raceUpdated = {
+               "id_race": race[0]._id,
+               "starting_point": race[0].starting_point,
+               "end_point": race[0].end_point,
+               "flight_date": race[0].flight_date,
+               "departure_time": race[0].departure_time,
+               "boarding_time": race[0].boarding_time,
+               "baggage": race[0].baggage,
+               "class_of_service": race[0].class_of_service,
+               "airline": race[0].airline,
+               "travel_time": race[0].travel_time,
+               "cost": race[0].cost
+           };
+           res.send(raceUpdated);
        }
     });
 });

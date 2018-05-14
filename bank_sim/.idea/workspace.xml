@@ -26,8 +26,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="185">
+              <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/mngDB.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -71,12 +71,16 @@
       <path value="$PROJECT_DIR$/node_modules/array-flatten/package.json" />
       <path value="$PROJECT_DIR$/node_modules/asn1/package.json" />
       <path value="$PROJECT_DIR$/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/async/package.json" />
       <path value="$PROJECT_DIR$/node_modules/asynckit/package.json" />
       <path value="$PROJECT_DIR$/node_modules/aws-sign2/package.json" />
       <path value="$PROJECT_DIR$/node_modules/aws4/package.json" />
       <path value="$PROJECT_DIR$/node_modules/bcrypt-pbkdf/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bluebird/package.json" />
       <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
       <path value="$PROJECT_DIR$/node_modules/boom/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bson/browser_build/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bson/package.json" />
       <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
       <path value="$PROJECT_DIR$/node_modules/caseless/package.json" />
       <path value="$PROJECT_DIR$/node_modules/co/package.json" />
@@ -95,6 +99,7 @@
       <path value="$PROJECT_DIR$/node_modules/destroy/package.json" />
       <path value="$PROJECT_DIR$/node_modules/ecc-jsbn/package.json" />
       <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ejs/package.json" />
       <path value="$PROJECT_DIR$/node_modules/encodeurl/package.json" />
       <path value="$PROJECT_DIR$/node_modules/escape-html/package.json" />
       <path value="$PROJECT_DIR$/node_modules/etag/package.json" />
@@ -125,12 +130,30 @@
       <path value="$PROJECT_DIR$/node_modules/json-schema/package.json" />
       <path value="$PROJECT_DIR$/node_modules/json-stringify-safe/package.json" />
       <path value="$PROJECT_DIR$/node_modules/jsprim/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/kareem/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/lodash.get/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/lodash/package.json" />
       <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
       <path value="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" />
       <path value="$PROJECT_DIR$/node_modules/methods/package.json" />
       <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
       <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
       <path value="$PROJECT_DIR$/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongodb-core/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongodb/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/lean/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/promises/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mpath/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mquery/package.json" />
       <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/node_modules/negotiator/package.json" />
       <path value="$PROJECT_DIR$/node_modules/oauth-sign/package.json" />
@@ -141,16 +164,23 @@
       <path value="$PROJECT_DIR$/node_modules/proxy-addr/package.json" />
       <path value="$PROJECT_DIR$/node_modules/punycode/package.json" />
       <path value="$PROJECT_DIR$/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/querystring/package.json" />
       <path value="$PROJECT_DIR$/node_modules/range-parser/package.json" />
       <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/package.json" />
       <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/package.json" />
       <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/package.json" />
       <path value="$PROJECT_DIR$/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/regexp-clone/package.json" />
       <path value="$PROJECT_DIR$/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/require_optional/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/require_optional/test/nestedTest/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/resolve-from/package.json" />
       <path value="$PROJECT_DIR$/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/semver/package.json" />
       <path value="$PROJECT_DIR$/node_modules/send/package.json" />
       <path value="$PROJECT_DIR$/node_modules/serve-static/package.json" />
       <path value="$PROJECT_DIR$/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/sliced/package.json" />
       <path value="$PROJECT_DIR$/node_modules/sntp/package.json" />
       <path value="$PROJECT_DIR$/node_modules/sshpk/package.json" />
       <path value="$PROJECT_DIR$/node_modules/statuses/package.json" />
@@ -177,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,11 +223,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/nodemailer-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -230,27 +260,27 @@
       <updated>1526225537916</updated>
       <workItem from="1526225540426" duration="6000" />
       <workItem from="1526225633948" duration="2271000" />
-      <workItem from="1526271459970" duration="10568000" />
+      <workItem from="1526271459970" duration="10639000" />
+      <workItem from="1526306631471" duration="868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12845000" />
+    <option name="totallyTimeSpent" value="13784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18680446" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32946634" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.20417634" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39791185" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39791185" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -263,19 +293,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07551669" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32946634" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39791185" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.20417634" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -286,6 +316,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/banking.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="103" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mngDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -310,14 +361,14 @@
     <entry file="file://$PROJECT_DIR$/mngDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="185">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>

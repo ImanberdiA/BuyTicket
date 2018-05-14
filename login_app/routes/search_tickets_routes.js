@@ -10,6 +10,7 @@ const authCheck = (req, res, next) => {
     }
 };
 
+//
 router.get('/', authCheck, (req, res) => {
 
     if(req.user.username){

@@ -31,9 +31,10 @@ app.get('/booking', function (req, res) {
 
     request('http://localhost:3000/tickets/?id='+req.query._idRace, function (error, response, body) {
         var currentTicketObj = JSON.parse(body);
-        request('http://localhost:3001/users/userId/?id='+req.query._idUser, function (err, respon, bdy) {
+        request('http://localhost:3001/users/user/?id='+req.query._idUser, function (err, respon, bdy) {
             var currentUserObj = JSON.parse(bdy);
             var userDataObj = Object.assign(currentTicketObj, currentUserObj);
+            // console.log(userDataObj);
             res.render('booking_buy', {
                 booking_data: userDataObj
             });
@@ -42,13 +43,26 @@ app.get('/booking', function (req, res) {
 });
 
 app.post('/buy', function (req, res) {
-    // console.log(req.body);
-    var airline = req.body.airline, cost = req.body.cost, departure_time = req.body.departure_time,
-        boarding_time = req.body.boarding_time, travel_time = req.body.travel_time, clientName = req.body.clientName,
-        clientSurname = req.body.clientSurname, gender = req.body.gender, birth_date = req.body.birth_date, citizenship = req.body.citizenship,
-        document_number = req.body.document_number, validity = req.body.validity, phone_number = req.body.phone_number, email = req.body.email;
+    console.log(req.body);
+    var id_race = req.body.id_race, starting_point = req.body.starting_point, end_point = req.body.end_point,
+        flight_date = req.body.flight_date, departure_time = req.body.departure_time, boarding_time = req.body.boarding_time,
+        baggage = req.body.baggage, class_of_service = req.body.class_of_service, airline = req.body.airline, travel_time = req.body.travel_time,
+        cost = req.body.cost, clientName = req.body.clientName, clientSurname = req.body.clientSurname, gender = req.body.gender,
+        birth_date = req.body.birth_date, citizenship = req.body.citizenship, document_number = req.body.document_number, validity = req.body.validity,
+        phone_number = req.body.phone_number, email = req.body.email;
 
     // Validation
+    req.checkBody('id_race', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('starting_point', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('end_point', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('flight_date', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('departure_time', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('boarding_time', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('baggage', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('class_of_service', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('airline', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('travel_time', 'Инфомация о рейсе недоступна').notEmpty();
+    req.checkBody('cost', 'Инфомация о рейсе недоступна').notEmpty();
     req.checkBody('clientName', 'Введите имя').notEmpty();
     req.checkBody('clientSurname', 'Введите фамилию').notEmpty();
     req.checkBody('gender', 'Введите пол').notEmpty();
@@ -62,12 +76,24 @@ app.post('/buy', function (req, res) {
     var errors = req.validationErrors();
 
     if(errors){
+        console.log("I AM IN ERROR");
         res.render('booking_buy', {
             errors: errors
         });
     }else{
         console.log("I AM HEREEEE");
         var newBookingTicket = new BookingTicket({
+            id_race: id_race,
+            starting_point: starting_point,
+            end_point: end_point,
+            flight_date: flight_date,
+            departure_time: departure_time,
+            boarding_time: boarding_time,
+            baggage: baggage,
+            class_of_service: class_of_service,
+            airline: airline,
+            travel_time: travel_time,
+            cost: cost,
             clientName: clientName,
             clientSurname: clientSurname,
             gender: gender,
@@ -101,7 +127,9 @@ app.post('/buy', function (req, res) {
             //     "idBt": booking_ticket._id
             // });
 
-            res.redirect('http://localhost:3004/bank/?idBt=' + booking_ticket._id);
+            if(booking_ticket) {
+                res.redirect('http://localhost:3004/bank/?idBt=' + booking_ticket._id);
+            }
         });
     }
 });

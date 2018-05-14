@@ -2,6 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const BookingTicketSchema = new Schema({
+    id_race: {type: String},
+    starting_point: {type: String},
+    end_point: {type: String},
+    flight_date: {type: String},
+    departure_time: {type: String},
+    boarding_time: {type: String},
+    baggage: {type: String},
+    class_of_service: {type: String},
+    airline: {type: String},
+    travel_time: {type: String},
+    cost: {type: String},
     clientName: {type: String},
     clientSurname: {type: String},
     gender: {type: String},

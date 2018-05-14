@@ -21,11 +21,27 @@
     <tbody>
         <form method="post" action="/buy">
             <tr>
-                <td><b>Авиакомпания</b><input class="form-control" type="text" name="airline" value="<%= booking_data.airline%>" readonly/></td>
-                <td><b>Стоимость</b><input class="form-control" type="text" name="cost" value="<%= booking_data.cost%>" readonly/></td>
-                <td><b>Время вылета</b><input class="form-control" type="text" name="departure_time" value="<%= booking_data.departure_time%>" readonly/></td>
-                <td><b>Время посадки</b><input class="form-control" type="text" name="boarding_time" value="<%= booking_data.boarding_time%>" readonly/></td>
-                <td><b>Время в пути</b><input class="form-control" type="text" name="travel_time" value="<%= booking_data.travel_time%>" readonly/></td>
+                <input name="starting_point" value="<%= booking_data.starting_point%>" type="hidden"/>
+                <input name="end_point" value="<%= booking_data.end_point%>" type="hidden"/>
+                <input name="flight_date" value="<%= booking_data.flight_date%>" type="hidden"/>
+                <input name="id_race" value="<%= booking_data.id_race%>" type="hidden"/>
+                <input name="airline" value="<%= booking_data.airline%>" type="hidden"/>
+                <input name="cost" value="<%= booking_data.cost%>" type="hidden"/>
+                <input name="departure_time" value="<%= booking_data.departure_time%>" type="hidden"/>
+                <input name="boarding_time" value="<%= booking_data.boarding_time%>" type="hidden"/>
+                <input name="travel_time" value="<%= booking_data.travel_time%>" type="hidden"/>
+                <input name="baggage" value="<%= booking_data.baggage%>" type="hidden"/>
+                <input name="class_of_service" value="<%= booking_data.class_of_service%>" type="hidden"/>
+
+                <h3>Оформление билета №<%= booking_data.id_race%> (<%= booking_data.starting_point%>-<%= booking_data.end_point%>)</h3>
+            </tr>
+            <tr>
+                <td><b>Авиакомпания</b><br /><h5><%= booking_data.airline%></h5></td>
+                <td><b>Стоимость</b><br /><%= booking_data.cost%></td>
+                <td><b>Время вылета</b><br /><%= booking_data.departure_time%></td>
+                <td><b>Время посадки</b><br /><%= booking_data.boarding_time%></td>
+                <td><b>Время в пути</b><br /><%= booking_data.travel_time%></td>
+                <td><b>Багаж</b><br /><%= booking_data.baggage%></td>
             </tr>
             <tr>
                 <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.name%>"/></td>
