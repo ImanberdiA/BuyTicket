@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <%if (locals.ticket_id){ %>
+        <table class="table table-hover">
+            <thead>
+            </thead>
+            <tbody>
+            <form method="post" action="/poi">
+                <tr>
+                    <td><b>Оплата за билет №</b><input class="form-control" type="text" name="ticket_id" value="<%= ticket_id%>" readonly/></td>
+                </tr>
+                <tr>
+                    <td><b>Номер карты</b><br /><input class="form-control" type="text" name="card_number"/></td>
+                    <td><b>Срок действия</b><br /><input class="form-control" type="text" name="month" placeholder="ММ"/><input class="form-control" type="text" name="year" placeholder="YY"/></td>
+                    <td><b>Код безопасности</b><br /><input class="form-control" type="text" name="secure_code"/></td>
+                    <td><b>Владелец карты</b><br /><input class="form-control" type="text" name="name" placeholder="Имя"/><input class="form-control" type="text" name="surname" placeholder="Фамилия"/></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
+                </tr>
+            </form>
+            </tbody>
+        </table>
+    <% } %>
+</body>
+</html>

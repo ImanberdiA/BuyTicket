@@ -9,6 +9,7 @@ var http = require('http');
 var request = require('request');
 var BookingTicket = require('./mngDB');
 var mongoose = require('mongoose');
+var querystring = require('querystring');
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -82,36 +83,42 @@ app.post('/buy', function (req, res) {
             if(err) throw err;
             console.log('New Booking Ticket ', booking_ticket._id);
 
-            request('http://localhost:3004/bank/?idBt='+booking_ticket._id, function (error, response, body) {
-                if(error){
-                    res.render('booking_buy',{
-                        success: 'OSHIBKA PRI POKUPKE'
-                    });
-                }else{
-                    console.log('BODY ', body);
-                    res.render('booking_buy',{
-                        success: 'POKUPKA PROSHLA I VASH EL. BILET'
-                    });
-                }
-            });
+            // request('http://localhost:3004/bank/?idBt='+booking_ticket._id, function (error, response, body) {
+            //     if(error){
+            //         res.render('booking_buy',{
+            //             success: 'OSHIBKA PRI POKUPKE'
+            //         });
+            //     }else{
+            //         // Здесь сформулировать эл.билет и отправить назад по res, и также отправить в эл.адрес
+            //         console.log('BODY ', body);
+            //         res.render('booking_buy',{
+            //             success: 'POKUPKA PROSHLA I VASH EL. BILET'
+            //         });
+            //     }
+            // });
+            // var bt = booking_ticket._id;
+            // var query = querystring.stringify({
+            //     "idBt": booking_ticket._id
+            // });
 
+            res.redirect('http://localhost:3004/bank/?idBt=' + booking_ticket._id);
         });
     }
 });
 
-// Return data of current ticket to bank_sim by ticket_id
-app.get('/ticket_info', function (req, res) {
-    var ticket = new BookingTicket({
-        _id: req.query._id
-    });
-    BookingTicket.getTicketById(ticket, function (err, ticket) {
-        if(err) throw err;
-        if(ticket) {
-            // console.log(ticket);
-            res.send(ticket);
-        }
-    });
-});
+// // Return data of current ticket to bank_sim by ticket_id
+// app.get('/ticket_info', function (req, res) {
+//     var ticket = new BookingTicket({
+//         _id: req.query._id
+//     });
+//     BookingTicket.getTicketById(ticket, function (err, ticket) {
+//         if(err) throw err;
+//         if(ticket) {
+//             console.log(ticket);
+//             res.send(ticket);
+//         }
+//     });
+// });
 
 
 // Set Port
