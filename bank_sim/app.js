@@ -2,6 +2,11 @@ var express = require('express');
 var app = express();
 var request = require('request');
 var bodyParser = require('body-parser');
+var BuyingTicket = require('./mngDB');
+const querystring = require('querystring');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/bankingDB');
 
 // View Engine
 app.set('view engine', 'ejs');
@@ -23,7 +28,30 @@ app.get('/bank', function (req, res) {
 });
 
 app.post('/poi', function (req, res) {
-    console.log(req.body);
+    // console.log(req.body);
+
+    var newBuyingTicket = new BuyingTicket({
+        ticket_id: req.body.ticket_id,
+        card_number: req.body.card_number,
+        validity: req.body.validity,
+        secure_code: req.body.secure_code,
+        clientName: req.body.clientName,
+        clientSurname: req.body.clientSurname
+    });
+
+    BuyingTicket.createBuyingTicket(newBuyingTicket, function (err, buying_ticket) {
+        if(err) throw err;
+
+        var query = querystring.stringify({
+            "idt": buying_ticket._id.toString(),
+            "idBt": req.body.ticket_id
+        });
+
+        res.redirect('http://localhost:3002/pll/?' + query);
+    });
+
+
+
 });
 
 

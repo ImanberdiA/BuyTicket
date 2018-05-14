@@ -42,7 +42,7 @@ app.get('/booking', function (req, res) {
 });
 
 app.post('/buy', function (req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     var airline = req.body.airline, cost = req.body.cost, departure_time = req.body.departure_time,
         boarding_time = req.body.boarding_time, travel_time = req.body.travel_time, clientName = req.body.clientName,
         clientSurname = req.body.clientSurname, gender = req.body.gender, birth_date = req.body.birth_date, citizenship = req.body.citizenship,
@@ -81,7 +81,7 @@ app.post('/buy', function (req, res) {
 
         BookingTicket.createBookingTicket(newBookingTicket, function (err, booking_ticket) {
             if(err) throw err;
-            console.log('New Booking Ticket ', booking_ticket._id);
+            // console.log('New Booking Ticket ', booking_ticket._id);
 
             // request('http://localhost:3004/bank/?idBt='+booking_ticket._id, function (error, response, body) {
             //     if(error){
@@ -104,6 +104,10 @@ app.post('/buy', function (req, res) {
             res.redirect('http://localhost:3004/bank/?idBt=' + booking_ticket._id);
         });
     }
+});
+
+app.get('/pll', function (req, res) {
+    console.log(req.query);
 });
 
 // // Return data of current ticket to bank_sim by ticket_id
