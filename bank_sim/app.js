@@ -39,10 +39,14 @@ app.post('/poi', function (req, res) {
         clientSurname: req.body.clientSurname
     });
 
+    //SIMULYACIYU BANKA SDELAT
+
+
     BuyingTicket.createBuyingTicket(newBuyingTicket, function (err, buying_ticket) {
         if(err) throw err;
 
         var query = querystring.stringify({
+            "success": true,
             "idt": buying_ticket._id.toString(),
             "idBt": req.body.ticket_id
         });

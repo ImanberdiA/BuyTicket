@@ -10,6 +10,7 @@ var request = require('request');
 var BookingTicket = require('./mngDB');
 var mongoose = require('mongoose');
 var querystring = require('querystring');
+var nodeMailer = require('nodemailer');
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -135,6 +136,35 @@ app.post('/buy', function (req, res) {
 });
 
 app.get('/pll', function (req, res) {
+     if(req.query.idt){
+        //ЗДЕСЬ ФОРМИРУЕМ ЭЛ БИЛЕТ ВОЗВРАЩАЕМ НА СТРАНИЦУ И ОТПРАВЛЯЕМ НА ПОЧТУ
+
+        let transporter = nodeMailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
+            auth: {
+                user: 'ab.imanberdi@gmail.com',
+                pass: 'colibri_1994'
+            }
+        });
+
+        let mailOptions = {
+            from: '"Imanberdi A" <ab.imanberdi@gmail.com>', // sender address
+            to: 'programming-java@mail.ru', // list of receivers
+            subject: 'Test', // Subject line
+            text: 'Text', // plain text body
+            html: '<b>NodeJS</b>' // html body
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message %s sent: %s', info.messageId, info.response);
+                res.render('index');
+        });
+    }
     console.log(req.query);
 });
 
