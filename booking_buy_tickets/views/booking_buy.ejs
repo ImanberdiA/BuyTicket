@@ -12,7 +12,9 @@
 <% } %>
 
 <%if (locals.errors){ %>
-    <b><%= errors%></b>
+    <% errors.forEach(function(error) { %>
+        <div class="alert alert-danger"><%= error.msg%></div>
+    <% }); %>
 <% } %>
 <%if (locals.booking_data){ %>
 <table class="table table-hover">
@@ -44,17 +46,29 @@
                 <td><b>Багаж</b><br /><%= booking_data.baggage%></td>
             </tr>
             <tr>
-                <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.name%>"/></td>
-                <td><b>Фамилия пассажира</b><input class="form-control" type="text" name="clientSurname" value="<%= booking_data.surname%>"/></td>
-                <td><b>Пол</b><input class="form-control" type="text" name="gender"/></td>
-                <td><b>Дата рождения</b><input class="form-control" type="text" name="birth_date"/></td>
-                <td><b>Гражданство</b><input class="form-control" type="text" name="citizenship"/></td>
+                <td><b>Имя пассажира</b><input class="form-control" type="text" name="clientName" value="<%= booking_data.name%>" required/></td>
+                <td><b>Фамилия пассажира</b><input class="form-control" type="text" name="clientSurname" value="<%= booking_data.surname%>" required/></td>
+                <td><b>Пол</b><select class="form-control" name="gender">
+                        <option>Ж</option>
+                        <option>М</option>
+                    </select></td>
+                <td><b>Дата рождения</b><input class="form-control" type="date" name="birth_date" max="2025-01-01" min="1900-01-01" required/></td>
+                <td><b>Гражданство</b><select class="form-control" name="citizenship">
+                        <option>Страна</option>
+                        <option>Алжир</option>
+                        <option>Албания</option>
+                        <option>Белоруссия</option>
+                        <option>Германия</option>
+                        <option>Россия</option>
+                        <option>Чехия</option>
+                        <option>Эстония</option>
+                    </select></td>
             </tr>
             <tr>
-                <td><b>№ документа</b><input class="form-control" type="text" name="document_number"/></td>
-                <td><b>Срок действия</b><input class="form-control" type="text" name="validity"/></td>
-                <td><b>Номер телефона</b><input class="form-control" type="text" name="phone_number"/></td>
-                <td><b>Электронная почта</b><input class="form-control" type="text" name="email" value="<%= booking_data.email%>"/></td>
+                <td><b>№ документа</b><input class="form-control" type="text" name="document_number" required/></td>
+                <td><b>Срок действия</b><input class="form-control" type="date" name="validity" max="2025-01-01" min="2018-01-01" required/></td>
+                <td><b>Номер телефона</b><input class="form-control" type="tel" name="phone_number" required/></td>
+                <td><b>Электронная почта</b><input class="form-control" type="text" name="email" value="<%= booking_data.email%>" required/></td>
             </tr>
             <tr>
                 <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>

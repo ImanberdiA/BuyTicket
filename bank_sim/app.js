@@ -5,11 +5,15 @@ var bodyParser = require('body-parser');
 var BuyingTicket = require('./mngDB');
 const querystring = require('querystring');
 var mongoose = require('mongoose');
+var path = require('path');
 
 mongoose.connect('mongodb://localhost/bankingDB');
 
 // View Engine
 app.set('view engine', 'ejs');
+
+// Set Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // BodyParser Middleware
 app.use(bodyParser.json());
@@ -41,7 +45,6 @@ app.post('/poi', function (req, res) {
 
     //SIMULYACIYU BANKA SDELAT
 
-
     BuyingTicket.createBuyingTicket(newBuyingTicket, function (err, buying_ticket) {
         if(err) throw err;
 
@@ -53,6 +56,7 @@ app.post('/poi', function (req, res) {
 
         res.redirect('http://localhost:3002/pll/?' + query);
     });
+
 
 
 

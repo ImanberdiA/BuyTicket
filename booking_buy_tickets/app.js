@@ -11,6 +11,7 @@ var BookingTicket = require('./mngDB');
 var mongoose = require('mongoose');
 var querystring = require('querystring');
 var nodeMailer = require('nodemailer');
+var PDFDocument = require('pdfkit');
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -77,9 +78,9 @@ app.post('/buy', function (req, res) {
     var errors = req.validationErrors();
 
     if(errors){
-        console.log("I AM IN ERROR");
+        console.log(errors);
         res.render('booking_buy', {
-            errors: errors
+            errors: errors,
         });
     }else{
         console.log("I AM HEREEEE");
@@ -108,25 +109,6 @@ app.post('/buy', function (req, res) {
 
         BookingTicket.createBookingTicket(newBookingTicket, function (err, booking_ticket) {
             if(err) throw err;
-            // console.log('New Booking Ticket ', booking_ticket._id);
-
-            // request('http://localhost:3004/bank/?idBt='+booking_ticket._id, function (error, response, body) {
-            //     if(error){
-            //         res.render('booking_buy',{
-            //             success: 'OSHIBKA PRI POKUPKE'
-            //         });
-            //     }else{
-            //         // Здесь сформулировать эл.билет и отправить назад по res, и также отправить в эл.адрес
-            //         console.log('BODY ', body);
-            //         res.render('booking_buy',{
-            //             success: 'POKUPKA PROSHLA I VASH EL. BILET'
-            //         });
-            //     }
-            // });
-            // var bt = booking_ticket._id;
-            // var query = querystring.stringify({
-            //     "idBt": booking_ticket._id
-            // });
 
             if(booking_ticket) {
                 res.redirect('http://localhost:3004/bank/?idBt=' + booking_ticket._id);
@@ -136,36 +118,182 @@ app.post('/buy', function (req, res) {
 });
 
 app.get('/pll', function (req, res) {
-     if(req.query.idt){
-        //ЗДЕСЬ ФОРМИРУЕМ ЭЛ БИЛЕТ ВОЗВРАЩАЕМ НА СТРАНИЦУ И ОТПРАВЛЯЕМ НА ПОЧТУ
 
-        let transporter = nodeMailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: 'ab.imanberdi@gmail.com',
-                pass: 'colibri_1994'
-            }
-        });
 
-        let mailOptions = {
-            from: '"Imanberdi A" <ab.imanberdi@gmail.com>', // sender address
-            to: 'programming-java@mail.ru', // list of receivers
-            subject: 'Test', // Subject line
-            text: 'Text', // plain text body
-            html: '<b>NodeJS</b>' // html body
-        };
+    var ticket = new BookingTicket({
+        _id: req.query.idBt
+    });
+    BookingTicket.getTicketById(ticket, function (err, ticket) {
+        if(err) throw err;
+        if(ticket) {
+            // console.log(ticket[0]);
 
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return console.log(error);
-            }
-            console.log('Message %s sent: %s', info.messageId, info.response);
-                res.render('index');
-        });
-    }
-    console.log(req.query);
+
+            // let filename = 'elec_ticket.pug';
+            // const doc = new PDFDocument();
+            // filename = encodeURIComponent(filename) + '.pdf';
+            // // Setting response to 'attachment' (download).
+            // // If you use 'inline' here it will automatically open the PDF
+            // res.setHeader('Content-disposition', 'automatically; filename="' + filename + '"');
+            // res.setHeader('Content-type', 'application/pdf', 'application/javascript');
+            // const content = 'Transaction: ' + req.query.idt + '\nFrom: ' + ticket[0].starting_point + '   To: ' + ticket[0].end_point +
+            // '\nFlight Date: ' + ticket[0].flight_date + '   Departure time: ' + ticket[0].departure_time + '   Boarding time: ' + ticket[0].boarding_time +
+            //     '\nBaggage: ' + ticket[0].baggage + '   Class of service: ' + ticket[0].class_of_service + '   Airline: ' + ticket[0].airline +
+            //     '\nTravel time: ' + ticket[0].travel_time + '   Cost: ' + ticket[0].cost + '   Client Name: ' + ticket[0].clientName +
+            //     'Client Surname: ' + ticket[0].clientSurname + '\nGender: ' + ticket[0].gender + '   Citizenship: ' + ticket[0].citizenship;
+            // doc.y = 500;
+            //
+            // doc.image('views/images/plane.jpg', {
+            //     fit: [200, 200],
+            //     align: 'left',
+            //     valign: 'bottom'
+            // });
+            //
+            // doc.text()
+            //     .fillColor("black")
+            //     .text(content, 100, 100);
+            //
+            // console.log(doc);
+
+
+            let transporter = nodeMailer.createTransport({
+                host: 'smtp.gmail.com',
+                port: 465,
+                secure: true,
+                auth: {
+                    user: 'ab.imanberdi@gmail.com',
+                    pass: 'colibri_1994'
+                }
+            });
+
+            let mailOptions = {
+                from: '"Покупка билетов" <ab.imanberdi@gmail.com>', // sender address
+                to: 'programming-java@mail.ru', // list of receivers
+                subject: 'Ваш электронный билет', // Subject linef
+                text: 'Text', // plain text bodyf
+                html: '<h2>Благодарим за покупку билета!</h2>', // html body,
+                // An array of attachments
+                attachments: [
+                        {
+                            filename: 'ticket.html',
+                            content: '<!DOCTYPE HTML>\n' +
+                            '<html>\n' +
+                            '<head>\n' +
+                                '<link rel="stylesheet" href="/css/bootstrap.css" />\n' +
+                                '<link rel="stylesheet" href="/css/style.css" />'+ '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+                            '  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">\n' +
+                            '  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>\n' +
+                            '  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>' +
+                                '<meta charset="utf-8">\n' +
+                            '<title>Таблица размеров обуви</title>\n' +
+                            '</head>\n' +
+                            '<body>' + '' +
+                            '<h2>Ваш электронный билет №' + req.query.idt + '</h2>' +
+                            '<table class="table table-bordered">' + '<thead>' +
+                                '<tr>\n' +
+                                    '<th>Откуда</th>\n' +
+                                    '<th>Куда</th>\n' +
+                                    '<th>Дата рейса</th>\n' +
+                                    '<th>Время вылета</th>\n' +
+                                    '<th>Время прибытия</th>\n' +
+                                '</tr>' + '</thead>' + '<tbody>' +
+                                '<tr>' +
+                                    '<td>' + ticket[0].starting_point + '</td>' +
+                                    '<td>' + ticket[0].end_point + '</td>' +
+                                    '<td>' + ticket[0].flight_date + '</td>' +
+                                    '<td>' + ticket[0].departure_time + '</td>' +
+                                    '<td>' + ticket[0].boarding_time + '</td>' +
+                                '</tr>' + '</tbody>' +
+                                '<tr>\n' +
+                                    '<th>Багаж</th>\n' +
+                                    '<th>Класс обслуживания</th>\n' +
+                                    '<th>Авиакомпания</th>\n' +
+                                    '<th>Время в пути</th>\n' +
+                                    '<th>Стоимость билета</th>\n' +
+                                '</tr>' +
+                                '<tr>' +
+                                    '<td>' + ticket[0].baggage + '</td>' +
+                                    '<td>' + ticket[0].class_of_service + '</td>' +
+                                    '<td>' + ticket[0].airline + '</td>' +
+                                    '<td>' + ticket[0].travel_time + '</td>' +
+                                    '<td>' + ticket[0].cost + '</td>' +
+                                '</tr>' +
+                                '<tr>\n' +
+                                    '<th>Имя клиента</th>\n' +
+                                    '<th>Фамилия клиента</th>\n' +
+                                    '<th>Пол</th>\n' +
+                                    '<th>Гражданство</th>\n' +
+                                '</tr>' +
+                                '<tr>' +
+                                    '<td>' + ticket[0].clientName + '</td>' +
+                                    '<td>' + ticket[0].clientSurname + '</td>' +
+                                    '<td>' + ticket[0].gender + '</td>' +
+                                    '<td>' + ticket[0].citizenship + '</td>' +
+                                '</tr>' +
+                            '</table>' +
+                            '</body>\n' +
+                            '</html>',
+                            contentType: 'html/plain'
+                        }
+                    ]
+            };
+
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return console.log(error);
+                }
+                console.log('Message %s sent: %s', info.messageId, info.response);
+
+                res.render('success');
+            });
+
+
+
+            // doc.pipe(res);
+            // doc.end();
+
+
+            // res.send(ticket);
+        }
+    });
+
+
+    //
+    //
+    //  if(req.query.idt){
+    //     //ЗДЕСЬ ФОРМИРУЕМ ЭЛ БИЛЕТ ВОЗВРАЩАЕМ НА СТРАНИЦУ И ОТПРАВЛЯЕМ НА ПОЧТУ
+    //
+    //     let transporter = nodeMailer.createTransport({
+    //         host: 'smtp.gmail.com',
+    //         port: 465,
+    //         secure: true,
+    //         auth: {
+    //             user: 'ab.imanberdi@gmail.com',
+    //             pass: 'colibri_1994'
+    //         }
+    //     });
+    //
+    //     let mailOptions = {
+    //         from: '"Imanberdi A" <ab.imanberdi@gmail.com>', // sender address
+    //         to: 'programming-java@mail.ru', // list of receivers
+    //         subject: 'Test', // Subject line
+    //         text: 'Text', // plain text body
+    //         html: '<b>NodeJS</b>' // html body
+    //     };
+    //
+    //     transporter.sendMail(mailOptions, (error, info) => {
+    //         if (error) {
+    //             return console.log(error);
+    //         }
+    //         console.log('Message %s sent: %s', info.messageId, info.response);
+    //             res.render('elec_ticket');
+    //     });
+    // }else{
+    //      res.render('elec_ticket', {
+    //
+    //      });
+    //  }
+    // console.log(req.query);
 });
 
 // // Return data of current ticket to bank_sim by ticket_id

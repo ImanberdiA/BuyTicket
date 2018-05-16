@@ -12,13 +12,16 @@
             <tbody>
             <form method="post" action="/poi">
                 <tr>
-                    <td><b>Оплата за билет №</b><input class="form-control" type="text" name="ticket_id" value="<%= ticket_id%>" readonly/></td>
+                    <input type="hidden" name="ticket_id" value="<%= ticket_id%>"/>
                 </tr>
                 <tr>
-                    <td><b>Номер карты</b><br /><input class="form-control" type="text" name="card_number"/></td>
-                    <td><b>Срок действия</b><br /><input class="form-control" type="text" name="validity"/></td>
-                    <td><b>Код безопасности</b><br /><input class="form-control" type="text" name="secure_code"/></td>
-                    <td><b>Владелец карты</b><br /><input class="form-control" type="text" name="clientName" placeholder="Имя"/><input class="form-control" type="text" name="clientSurname" placeholder="Фамилия"/></td>
+                    <td><h4>Оплата за билет №<%= ticket_id%></h4></td>
+                </tr>
+                <tr>
+                    <td><b>Номер карты</b><br /><input class="form-control" type="text" name="card_number" required/></td>
+                    <td><b>Срок действия</b><br /><input class="form-control" type="date" name="validity" max="2025-01-01" min="2018-01-01" required/></td>
+                    <td><b>Код безопасности</b><br /><input class="form-control" type="text" name="secure_code" required/></td>
+                    <td><b>Владелец карты</b><br /><input class="form-control" type="text" name="clientName" placeholder="ФИО" required/>
                 </tr>
                 <tr>
                     <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
