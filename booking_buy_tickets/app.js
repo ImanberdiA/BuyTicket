@@ -29,9 +29,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/booking', function (req, res) {
-    // console.log(req.query);
+    console.log(req.query);
 
-    request('http://localhost:3000/tickets/?id='+req.query._idRace, function (error, response, body) {
+    request('http://localhost:3000/ticket/?id='+req.query._idRace, function (error, response, body) {
         var currentTicketObj = JSON.parse(body);
         request('http://localhost:3001/users/user/?id='+req.query._idUser, function (err, respon, bdy) {
             var currentUserObj = JSON.parse(bdy);

@@ -56,6 +56,19 @@ router.post('/register', function(req, res){
     }
 });
 
+
+router.post('/updateUser', function (req, res) {
+    var UserObj = {_id: req.body._id, name: req.body.name, surname: req.body.surname};
+    User.updateUser(UserObj, function (err, up_user) {
+        if(err) throw err;
+        if(up_user)
+        {
+            console.log('up_user', up_user);
+        }
+    });
+});
+
+
 passport.use(new LocalStrategy(
     function(email, password, done) {
         User.getUserByUsername(email, function(err, user){
@@ -98,7 +111,6 @@ router.get('/logout', function(req, res){
 
     res.redirect('/users/login');
 });
-
 
 router.get('/user', function (req, res) {
     var user = new User({

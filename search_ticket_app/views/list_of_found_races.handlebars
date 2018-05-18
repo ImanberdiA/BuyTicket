@@ -21,17 +21,21 @@
             </thead>
             <tbody>
             {{#each data_races}}
-                <tr>
-                    <form method="post" action="/buyticket">
-                        <td><input class="form-control" type="text" name="ticket_number" value="{{this._id}}" readonly/></td>
-                        <td><input class="form-control" type="text" name="airline" value="{{this.airline}}" readonly/></td>
-                        <td><input class="form-control" type="text" name="cost" value="{{this.cost}}" readonly/></td>
-                        <td><input class="form-control" type="text" name="departure_time" value="{{this.departure_time}}" readonly/></td>
-                        <td><input class="form-control" type="text" name="boarding_time" value="{{this.boarding_time}}" readonly/></td>
-                        <td><input class="form-control" type="text" name="travel_time" value="{{this.travel_time}}" readonly/></td>
-                        <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
-                    </form>
-                </tr>
+                <form method="post" action="/buyticket">
+                    <tr>
+                        <input name="ticket_number" value="{{this._id}}" type="hidden"/>
+                    </tr>
+                    <tr>
+                            <td>{{this._id}}</td>
+                            <td>{{this.airline}}</td>
+                            <td>{{this.cost}}</td>
+                            <td>{{this.departure_time}}</td>
+                            <td>{{this.boarding_time}}</td>
+                            <td>{{this.travel_time}}</td>
+
+                            <td><button type="submit" class="btn btn-success btn-primary btn-block">Купить</button></td>
+                    </tr>
+                </form>
             {{/each}}
             </tbody>
         </table>

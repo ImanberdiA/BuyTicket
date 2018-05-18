@@ -19,7 +19,7 @@ const passportSetup = require('./config/passport-setup');
 const keys = require('./config/keys');
 const cookieSession = require('cookie-session');
 
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect('mongodb://localhost/users');
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
@@ -60,16 +60,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
 // set up routes - SOCREG
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
-app.use('/searchTicket', search_tickets_routes);
-
-// // create home route -- SOCREG
-// app.get('/', (req, res) => {
-//     res.render('home', {user: req.user});
-// });
+app.use('/tickets', search_tickets_routes);
 
 // Express Validator
 app.use(expressValidator({
@@ -103,7 +97,6 @@ app.use(function (req, res, next) {
 
 app.use('/', routes);
 app.use('/users', users);
-
 
 // Set Port
 app.set('port', (process.env.PORT || 3001));

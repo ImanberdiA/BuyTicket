@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // SearchTicket function
-app.get('/searchTicket', function (req, res) {
+app.get('/tickets', function (req, res) {
     req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
     res.render('search_races');
 });
@@ -101,7 +101,7 @@ app.post('/races', function(req, res) {
     }
 });
 
-app.get('/tickets', function (req, res) {
+app.get('/ticket', function (req, res) {
     var race = new Race({
         _id: req.query.id
     });

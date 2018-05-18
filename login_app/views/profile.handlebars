@@ -6,11 +6,26 @@
 </head>
 <body>
 <header>
-    <h1>Добро пожаловать, {{ user.username }}</h1>
+    {{#if user.surname}}
+        <h1>Добро пожаловать, {{ user.surname }}</h1>
+    {{/if}}
 </header>
-<main>
+<!--<main>-->
     <img src="{{ user.thumbnail }}" />
     <p>This is your profile thumbnail</p>
-</main>
+
+    <form method="post" action="/users/updateUser">
+        <input name="_id" value="{{ user._id }}"/>
+        <input type="text" name="name" value="{{ user.name }}" id="name" type="hidden"/>
+        <input type="text" name="surname" value="{{ user.surname }}" id="surname" type="hidden"/>
+        
+
+        <button type="button" class="btn btn-success btn-primary btn-block" onclick="name.removeAttribute('type'); surname.removeAttribute('type');">Редактировать</button>
+        <button type="button" class="btn btn-success btn-primary btn-block" onclick="name.setAttribute('type', 'hidden'); surname.setAttribute('type', 'hidden');">Сохранить</button>
+    </form>
+
+
+
+<!--</main>-->
 </body>
 </html>
