@@ -45,7 +45,7 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
 };
 
 module.exports.updateUser = function (userData, callback) {
-    var selector = {_id: userData._id}, query = {name: userData.name};
+    var selector = {_id: userData._id}, query = {name: userData.name, surname: userData.surname};
     User.update(selector, {$set: query}, callback);
 };
 

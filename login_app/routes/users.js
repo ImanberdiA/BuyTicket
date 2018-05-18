@@ -64,6 +64,7 @@ router.post('/updateUser', function (req, res) {
         if(up_user)
         {
             console.log('up_user', up_user);
+            res.redirect('http://localhost:3001/profile');
         }
     });
 });

@@ -10,19 +10,24 @@
         <h1>Добро пожаловать, {{ user.surname }}</h1>
     {{/if}}
 </header>
-<!--<main>-->
+
     <img src="{{ user.thumbnail }}" />
     <p>This is your profile thumbnail</p>
 
-    <form method="post" action="/users/updateUser">
-        <input name="_id" value="{{ user._id }}"/>
-        <input type="text" name="name" value="{{ user.name }}" id="name" type="hidden"/>
-        <input type="text" name="surname" value="{{ user.surname }}" id="surname" type="hidden"/>
-        
+    <table>
+        <form method="post" action="/users/updateUser">
+            <input name="_id" value="{{ user._id }}" type="hidden"/>
+            <tr>
+                <td><input class="form-control" name="name" value="{{ user.name }}" id="user_name" type="hidden"/></td>
+                <td><input class="form-control" name="surname" value="{{ user.surname }}" id="user_surname" type="hidden"/></td>
+            </tr>
 
-        <button type="button" class="btn btn-success btn-primary btn-block" onclick="name.removeAttribute('type'); surname.removeAttribute('type');">Редактировать</button>
-        <button type="button" class="btn btn-success btn-primary btn-block" onclick="name.setAttribute('type', 'hidden'); surname.setAttribute('type', 'hidden');">Сохранить</button>
-    </form>
+            <tr>
+                <td><button type="submit" class="btn btn-success btn-primary btn-block" style="display:none;" id="saveBut">Сохранить</button></td>
+                <td><button type="button" class="btn btn-success btn-primary btn-block" onclick="user_name.setAttribute('type', 'text'); user_surname.setAttribute('type', 'text'); saveBut.removeAttribute('style')">Редактировать</button></td>
+            </tr>
+        </form>
+    </table>
 
 
 
