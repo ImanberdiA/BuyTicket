@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const querystring = require('querystring');
+// const querystring = require('querystring');
+var request = require('request');
 
 const authCheck = (req, res, next) => {
     if(!req.user){
@@ -11,8 +12,12 @@ const authCheck = (req, res, next) => {
 
 // get profile
 router.get('/', authCheck, (req, res) => {
-    console.log(req.user.surname);
-    res.render('profile', { user: req.user });
+    console.log(req.user._id);
+    
+    request('http://localhost:3002/tickets/?id=' + req.user._id, function (error, response, body) {
+        var tickets = JSON.parse(body);
+        res.render('profile', { user: req.user, tickets: tickets });
+    });
 });
 
 module.exports = router;

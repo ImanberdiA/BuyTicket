@@ -35,8 +35,8 @@ app.get('/booking', function (req, res) {
         var currentTicketObj = JSON.parse(body);
         request('http://localhost:3001/users/user/?id='+req.query._idUser, function (err, respon, bdy) {
             var currentUserObj = JSON.parse(bdy);
-            var userDataObj = Object.assign(currentTicketObj, currentUserObj);
-            // console.log(userDataObj);
+            var userDataObj = Object.assign(currentTicketObj, currentUserObj, {id_user: req.query._idUser});
+            console.log(userDataObj);
             res.render('booking_buy', {
                 booking_data: userDataObj
             });
@@ -44,9 +44,39 @@ app.get('/booking', function (req, res) {
     });
 });
 
+app.get('/tickets', function (req, res) {
+    console.log('REEEEEEEEEEEEEEEEEEEEEQQQ', req.query);
+
+    var ticket = new BookingTicket({
+        _id: req.query.id
+    });
+    BookingTicket.getTicketById(ticket, function (err, tickets) {
+        if(err) throw err;
+        if(tickets) {
+            var arrTickets = tickets.map(function (ticket) {
+                var updateTicket = {
+                    airline: ticket.airline,
+                    starting_point: ticket.starting_point,
+                    end_point: ticket.end_point,
+                    flight_date: ticket.flight_date,
+                    departure_time: ticket.departure_time,
+                    boarding_time: ticket.boarding_time,
+                    baggage: ticket.baggage,
+                    class_of_service: ticket.class_of_service,
+                    travel_time: ticket.travel_time,
+                    cost: ticket.cost
+                };
+                return updateTicket;
+            });
+
+            res.send(arrTickets);
+        }
+    });
+});
+
 app.post('/buy', function (req, res) {
-    console.log(req.body);
-    var id_race = req.body.id_race, starting_point = req.body.starting_point, end_point = req.body.end_point,
+    // console.log(req.body);
+    var id_user = req.body.id_user, id_race = req.body.id_race, starting_point = req.body.starting_point, end_point = req.body.end_point,
         flight_date = req.body.flight_date, departure_time = req.body.departure_time, boarding_time = req.body.boarding_time,
         baggage = req.body.baggage, class_of_service = req.body.class_of_service, airline = req.body.airline, travel_time = req.body.travel_time,
         cost = req.body.cost, clientName = req.body.clientName, clientSurname = req.body.clientSurname, gender = req.body.gender,
@@ -54,6 +84,7 @@ app.post('/buy', function (req, res) {
         phone_number = req.body.phone_number, email = req.body.email;
 
     // Validation
+    req.checkBody('id_user', 'Инфомация о пассажире недоступна').notEmpty();
     req.checkBody('id_race', 'Инфомация о рейсе недоступна').notEmpty();
     req.checkBody('starting_point', 'Инфомация о рейсе недоступна').notEmpty();
     req.checkBody('end_point', 'Инфомация о рейсе недоступна').notEmpty();
@@ -78,14 +109,13 @@ app.post('/buy', function (req, res) {
     var errors = req.validationErrors();
 
     if(errors){
-        console.log(errors);
         res.render('booking_buy', {
             errors: errors,
         });
     }else{
-        console.log("I AM HEREEEE");
         var newBookingTicket = new BookingTicket({
             id_race: id_race,
+            id_user: id_user,
             starting_point: starting_point,
             end_point: end_point,
             flight_date: flight_date,

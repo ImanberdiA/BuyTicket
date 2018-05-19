@@ -121,6 +121,7 @@ router.get('/user', function (req, res) {
     User.getUserById(req.query.id, function (err, user) {
         if(err) throw err;
         if(user){
+            console.log(user);
             var userUpdated = {
                 "name": user.name,
                 "surname": user.surname,

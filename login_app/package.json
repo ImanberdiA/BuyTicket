@@ -28,6 +28,7 @@
     "passport-http": "*",
     "passport-local": "*",
     "query-string": "^6.1.0",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "request": "^2.86.0"
   }
 }

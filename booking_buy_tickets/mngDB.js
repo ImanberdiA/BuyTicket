@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const BookingTicketSchema = new Schema({
     id_race: {type: String},
+    id_user: {type: String},
     starting_point: {type: String},
     end_point: {type: String},
     flight_date: {type: String},
@@ -31,5 +32,5 @@ module.exports.createBookingTicket = function (newBookingTicket, callback) {
 };
 
 module.exports.getTicketById = function (ticket, callback) {
-    BookingTicket.find({_id: ticket._id}, callback);
+    BookingTicket.find({id_user: ticket._id}, callback);
 };

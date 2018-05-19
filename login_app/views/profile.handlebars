@@ -3,11 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>Личный кабинет</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").hide();
+            });
+            $(".btn2").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
     {{#if user.surname}}
         <h1>Добро пожаловать, {{ user.surname }}</h1>
+    {{/if}}
+</header>
+
+<header>
+    {{#if tickets}}
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Билеты
+            </a>
+        </p>
+        {{#each tickets}}
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    {{this.airline}}
+                </div>
+            </div>
+        {{/each}}
     {{/if}}
 </header>
 
@@ -18,18 +47,20 @@
         <form method="post" action="/users/updateUser">
             <input name="_id" value="{{ user._id }}" type="hidden"/>
             <tr>
+                <td>Имя: </td><td><p> {{user.name}} </p></td>
+                <td>Фамилия: </td><td><p> {{user.surname}} </p></td>
+            </tr>
+            <tr>
                 <td><input class="form-control" name="name" value="{{ user.name }}" id="user_name" type="hidden"/></td>
                 <td><input class="form-control" name="surname" value="{{ user.surname }}" id="user_surname" type="hidden"/></td>
             </tr>
 
             <tr>
-                <td><button type="submit" class="btn btn-success btn-primary btn-block" style="display:none;" id="saveBut">Сохранить</button></td>
-                <td><button type="button" class="btn btn-success btn-primary btn-block" onclick="user_name.setAttribute('type', 'text'); user_surname.setAttribute('type', 'text'); saveBut.removeAttribute('style')">Редактировать</button></td>
+                <td><button type="submit" class="btn btn-success btn-primary btn-block " style="display:none;" id="saveBut">Сохранить</button></td>
+                <td><button type="button" class="btn btn-success btn-primary btn-block btn1" onclick="user_name.setAttribute('type', 'text'); user_surname.setAttribute('type', 'text'); saveBut.removeAttribute('style')">Редактировать</button></td>
             </tr>
         </form>
     </table>
-
-
 
 <!--</main>-->
 </body>
