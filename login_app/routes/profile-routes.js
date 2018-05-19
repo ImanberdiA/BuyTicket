@@ -12,10 +12,11 @@ const authCheck = (req, res, next) => {
 
 // get profile
 router.get('/', authCheck, (req, res) => {
-    console.log(req.user._id);
+    // console.log(req.user);
     
     request('http://localhost:3002/tickets/?id=' + req.user._id, function (error, response, body) {
         var tickets = JSON.parse(body);
+        console.log(tickets);
         res.render('profile', { user: req.user, tickets: tickets });
     });
 });
