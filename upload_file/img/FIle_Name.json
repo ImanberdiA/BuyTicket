@@ -1,0 +1,12 @@
+{
+	"starting_point": "starting_point",
+	"end_point": "end_point",
+	"flight_date": "flight_date",
+    "departure_time": "departure_time",
+    "boarding_time": "boarding_time",
+    "baggage": "baggage",
+    "class_of_service": "class_of_service",
+    "airline": "airline",
+    "travel_time": "travel_time",
+    "cost": "cost"
+}
