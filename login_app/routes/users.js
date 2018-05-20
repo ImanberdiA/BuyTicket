@@ -2,8 +2,19 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var users_service_id = require("../users_service_id");
+const user_id_db = require('../models/con_w_other_s');
 
 var User = require('../models/user');
+
+
+const authCheck = (req, res, next) => {
+    if(!req.user){
+        res.redirect('/auth/login');
+    } else {
+        next();
+    }
+};
 
 // Register
 router.get('/register', function(req, res){
@@ -106,6 +117,16 @@ router.post('/login',
     });
 
 router.get('/logout', function(req, res){
+    // console.log(req.user);
+
+    var newIdUser = new user_id_db({
+        id_cur_user: req.user._id
+    });
+
+    user_id_db.deleteIdUser(req.user._id, (err, IdUser) => {
+        // console.log('Delete ');
+    });
+
     req.logout();
 
     req.flash('success_msg', 'Вы успешно вышли с системы');
@@ -114,6 +135,7 @@ router.get('/logout', function(req, res){
 });
 
 router.get('/user', function (req, res) {
+    console.log('I AM WITHOUT KEY');
     var user = new User({
         _id: req.query.id
     });
@@ -131,5 +153,10 @@ router.get('/user', function (req, res) {
         }
     });
 });
+
+router.get('/user_id', authCheck, function (req, res) {
+    res.send(users_service_id.password_login_app);
+});
+
 
 module.exports = router;

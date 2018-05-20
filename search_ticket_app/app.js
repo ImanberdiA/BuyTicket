@@ -10,6 +10,10 @@ var MongoStore = require('connect-mongo')(session);
 var cookieParser = require('cookie-parser');
 var Race = require('./mngDB');
 const querystring = require('querystring');
+var request = require('request');
+const search_service_id = require('./search_service_id');
+
+var encryptor = require('simple-encryptor')(search_service_id.unique_key_encrypt_decrypt);
 
 app.use(expressValidator());
 app.use(cookieParser());
@@ -39,8 +43,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // SearchTicket function
 app.get('/tickets', function (req, res) {
-    req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
-    res.render('search_races');
+    console.log(req.query);
+
+    if(req.query.id_app == search_service_id.id_search_app){
+
+        request('http://localhost:3001/tickets/auth/?uid=' + req.query._id, function (error, response, body) {
+            if(body == "success"){
+                req.session.loginAppSession = {UserIdFromLoginApp: req.query._id};
+                res.render('search_races');
+            } else if(body == "access_denied"){
+                res.redirect('http://localhost:3001/users/login');
+            }
+        });
+    }
+
+    // ЗДЕСЬ СРАВНИТЬ ID ДВУХ СЕРВИСОВ, И ПРИ УСПЕХЕ ОТПРАВИТЬ ПАРОЛЬ ЭТОГО СЕРВИСА НА СЕРВИС ПОЛЬЗ. ДЛЯ СРАВНЕНИЯ
 });
 
 // BuyTicket function

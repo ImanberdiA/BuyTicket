@@ -45,7 +45,6 @@ app.get('/booking', function (req, res) {
 });
 
 app.get('/tickets', function (req, res) {
-    console.log('REEEEEEEEEEEEEEEEEEEEEQQQ', req.query);
 
     var ticket = new BookingTicket({
         _id: req.query.id
