@@ -1,12 +1,48 @@
 {
-	"starting_point": "starting_point",
-	"end_point": "end_point",
-	"flight_date": "flight_date",
-    "departure_time": "departure_time",
-    "boarding_time": "boarding_time",
-    "baggage": "baggage",
-    "class_of_service": "class_of_service",
-    "airline": "airline",
-    "travel_time": "travel_time",
-    "cost": "cost"
+	"starting_point": "Берлин",
+	"end_point": "Прага",
+	"flight_date": "31.05.2018",
+    "departure_time": "15:40",
+    "boarding_time": "18:00",
+    "baggage": "20",
+    "class_of_service": "Эконом-класс",
+    "airline": "Аэрофлот",
+    "travel_time": "2.20",
+    "cost": "7000"
+};
+{
+	"starting_point": "Милан",
+	"end_point": "Лондон",
+	"flight_date": "09.09.2018",
+    "departure_time": "18:20",
+    "boarding_time": "21:00",
+    "baggage": "10",
+    "class_of_service": "Эконом-класс",
+    "airline": "Россия",
+    "travel_time": "2.40",
+    "cost": "10000"
+};
+{
+	"starting_point": "Москва",
+	"end_point": "Мадрид",
+	"flight_date": "09.07.2018",
+    "departure_time": "11:05",
+    "boarding_time": "18:50",
+    "baggage": "10",
+    "class_of_service": "Эконом-класс",
+    "airline": "Аэрофлот",
+    "travel_time": "7.45",
+    "cost": "12000"
+};
+{
+	"starting_point": "Москва",
+	"end_point": "Минск",
+	"flight_date": "09.07.2018",
+    "departure_time": "11:10",
+    "boarding_time": "14:30",
+    "baggage": "15",
+    "class_of_service": "Бизнес-класс",
+    "airline": "Lufthansa",
+    "travel_time": "2.40",
+    "cost": "5000"
 }

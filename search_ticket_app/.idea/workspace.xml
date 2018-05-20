@@ -17,7 +17,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="17">
               <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
               <folding>
                 <marker date="1526818197953" expanded="true" signature="2878:3966" ph="..." />
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/mngDB.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -112,6 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,12 +135,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../login_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../upload_file" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -211,12 +211,13 @@
       <workItem from="1526637177530" duration="10363000" />
       <workItem from="1526705248895" duration="3020000" />
       <workItem from="1526749616357" duration="2518000" />
-      <workItem from="1526793554379" duration="15084000" />
+      <workItem from="1526793554379" duration="15863000" />
+      <workItem from="1526824412492" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149791000" />
+    <option name="totallyTimeSpent" value="150604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -227,7 +228,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19416386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19416386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.25476992" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -614,13 +615,13 @@
     <entry file="file://$PROJECT_DIR$/mngDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="17">
           <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
           <folding>
             <marker date="1526818197953" expanded="true" signature="2878:3966" ph="..." />

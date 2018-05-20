@@ -17,8 +17,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -26,7 +26,7 @@
       <file leaf-file-name="mngDB.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mngDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
+            <state relative-caret-position="459">
               <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -97,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,13 +114,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../upload_file" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -181,15 +181,16 @@
       <workItem from="1526637816050" duration="8468000" />
       <workItem from="1526709130725" duration="7167000" />
       <workItem from="1526748888256" duration="5862000" />
-      <workItem from="1526794265408" duration="1903000" />
+      <workItem from="1526794265408" duration="2510000" />
+      <workItem from="1526824414024" duration="651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123316000" />
+    <option name="totallyTimeSpent" value="124574000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
@@ -197,7 +198,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50033045" side_tool="true" weight="0.32763532" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49966952" visible="true" weight="0.23232323" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49966952" weight="0.23232323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49966952" weight="0.3259861" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -535,14 +536,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mngDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
+        <state relative-caret-position="459">
           <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
         </state>
       </provider>

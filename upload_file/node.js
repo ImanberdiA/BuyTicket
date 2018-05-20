@@ -1,7 +1,7 @@
-var express = require('express');    //Express Web Server
-var busboy = require('connect-busboy'); //middleware for form/file upload
-var path = require('path');     //used for file path
-var fs = require('fs-extra');       //File System - for file manipulation
+var express = require('express');
+var busboy = require('connect-busboy');
+var path = require('path');
+var fs = require('fs-extra');
 var newTicket = require('./mngDB');
 var mongoose = require('mongoose');
 
@@ -17,11 +17,6 @@ app.set('view engine', 'ejs');
 app.use(busboy());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* ==========================================================
-Create a Route (/upload) to handle the Form submission
-(handle POST requests to /upload)
-Express v4  Route definition
-============================================================ */
 
 app.get('/', function (req, res) {
     res.render('index');
@@ -33,39 +28,43 @@ app.route('/upload')
         var fstream, ttt;
         req.pipe(req.busboy);
         req.busboy.on('file', function (fieldname, file, filename) {
-            console.log("Uploading: " + filename);
+            // console.log("Uploading: " + filename);
 
             //Path where image will be uploaded
             fstream = fs.createWriteStream(__dirname + '/img/' + filename);
             file.pipe(fstream);
             fstream.on('close', function () {
-                console.log("Upload Finished of " + filename);
+                // console.log("Upload Finished of " + filename);
                 ttt = fs.createReadStream(__dirname + '/img/' + filename);
                 ttt.on('data', (chunk) => {
-                    // console.log(JSON.parse(chunk));
-                    var current_ticket = JSON.parse(chunk);
-                    var newTicketObj = new newTicket({
-                        starting_point: current_ticket.starting_point,
-                        end_point: current_ticket.end_point,
-                        flight_date: current_ticket.flight_date,
-                        departure_time: current_ticket.departure_time,
-                        boarding_time: current_ticket.boarding_time,
-                        baggage: current_ticket.baggage,
-                        class_of_service: current_ticket.class_of_service,
-                        airline: current_ticket.airline,
-                        travel_time: current_ticket.travel_time,
-                        cost: current_ticket.cost
+                    // console.log('chunk ', chunk);
+                    var output_datas_string = chunk.toString('utf8');
+                    var races_array = output_datas_string.split(';');
+                    // var s = JSON.parse(races_array[1]);
+                    // console.log(s.cost);
+
+                    races_array.forEach(function (each_object_array) {
+                        var each_jason = JSON.parse(each_object_array);
+                        var newTicketObj = new newTicket({
+                            starting_point: each_jason.starting_point,
+                            end_point: each_jason.end_point,
+                            flight_date: each_jason.flight_date,
+                            departure_time: each_jason.departure_time,
+                            boarding_time: each_jason.boarding_time,
+                            baggage: each_jason.baggage,
+                            class_of_service: each_jason.class_of_service,
+                            airline: each_jason.airline,
+                            travel_time: each_jason.travel_time,
+                            cost: each_jason.cost
+                        });
+
+                        newTicket.createTicketOfRaces(newTicketObj, function (err, new_ticket) {
+                            if(err) throw err;
+                            if(new_ticket) {
+                                console.log(new_ticket);
+                            }
+                        });
                     });
-
-                    newTicket.createTicketOfRaces(newTicketObj, function (err, new_ticket) {
-                        if(err) throw err;
-                        if(new_ticket) {
-                            console.log(new_ticket);
-                        }
-                    });
-
-
-                    // console.log(typeof JSON.parse(chunk.toString('utf8')));
                 });
 
 
@@ -81,10 +80,10 @@ app.route('/upload')
 app.get('/delete', function (req, res) {
     fst.unlink('img/File_Name.txt', (err) => {
         if (err) throw err;
-        console.log('path/file.txt was deleted');
+        console.log('file.txt was deleted');
     });
 });
 
-var server = app.listen(3030, function() {
+var server = app.listen(100, function() {
     console.log('Listening on port %d', server.address().port);
 });

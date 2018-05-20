@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="node.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="44">
+              <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -43,12 +43,18 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>current_ticket</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/mngDB.js" />
+        <option value="$PROJECT_DIR$/img/FIle_Name.json" />
         <option value="$PROJECT_DIR$/node.js" />
       </list>
     </option>
@@ -60,7 +66,110 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bluebird/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bson/browser_build/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bson/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/busboy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/charenc/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/connect-busboy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/crypt/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/dicer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ejs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express-fileupload/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express-fileupload/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/is-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/jsonfile/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/kareem/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/lodash.get/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/md5/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongodb-core/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongodb/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/lean/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/promises/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mongoose/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mpath/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/mquery/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/path/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/process/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/regexp-clone/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/require_optional/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/require_optional/test/nestedTest/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/sliced/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/streamifier/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/streamsearch/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/universalify/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/util/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/vary/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
@@ -73,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,12 +204,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -130,11 +239,15 @@
       <option name="presentableId" value="Default" />
       <updated>1526759113343</updated>
       <workItem from="1526759115144" duration="6708000" />
+      <workItem from="1526818254998" duration="118000" />
+      <workItem from="1526818388860" duration="2998000" />
+      <workItem from="1526824414237" duration="31000" />
+      <workItem from="1526824466408" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6708000" />
+    <option name="totallyTimeSpent" value="10906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -142,21 +255,21 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15390626" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16498317" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16498317" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32996634" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +279,90 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mngDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mngDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="64" lean-forward="true" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mngDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mngDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -180,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/FIle_Name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mngDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -194,10 +384,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/FIle_Name.txt" />
+    <entry file="file://$PROJECT_DIR$/img/FIle_Name.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="617" column="23" selection-start-line="617" selection-start-column="23" selection-end-line="617" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="44">
+          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
         </state>
       </provider>
     </entry>

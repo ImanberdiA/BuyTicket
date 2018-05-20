@@ -17,8 +17,8 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+            <state relative-caret-position="2142">
+              <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -26,8 +26,8 @@
       <file leaf-file-name="con_w_other_s.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/con_w_other_s.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -35,7 +35,7 @@
       <file leaf-file-name="search_tickets_routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/search_tickets_routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
+            <state relative-caret-position="154">
               <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
             </state>
           </provider>
@@ -133,10 +133,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-7" />
+    <option name="y" value="-7" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -144,7 +144,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,23 +254,23 @@
       <workItem from="1526635476657" duration="33102000" />
       <workItem from="1526706767592" duration="9430000" />
       <workItem from="1526749317991" duration="6221000" />
-      <workItem from="1526793873074" duration="20526000" />
+      <workItem from="1526793873074" duration="21126000" />
+      <workItem from="1526824413853" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188545000" />
+    <option name="totallyTimeSpent" value="189187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-5" y="-5" width="1551" height="839" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118489586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118412495" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2366621" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2366621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.16552667" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -287,19 +287,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.20689656" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3309958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.12689655" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3309958" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -641,21 +641,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+        <state relative-caret-position="2142">
+          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/con_w_other_s.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/search_tickets_routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="154">
           <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
