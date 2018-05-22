@@ -32,5 +32,5 @@ module.exports.createBookingTicket = function (newBookingTicket, callback) {
 };
 
 module.exports.getTicketById = function (ticket, callback) {
-    BookingTicket.find({id_user: ticket._id}, callback);
+    BookingTicket.find({_id: ticket._id}, callback);
 };

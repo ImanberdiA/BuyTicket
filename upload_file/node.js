@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 var fst = require('fs');
 
-mongoose.connect('mongodb://localhost/t');
+mongoose.connect('mongodb://localhost/testDB');
 
 var app = express();
 
@@ -66,13 +66,6 @@ app.route('/upload')
                         });
                     });
                 });
-
-
-
-
-
-                // ttt.pipe(res);
-                // res.redirect('back');           //where to go next
             });
         });
     });

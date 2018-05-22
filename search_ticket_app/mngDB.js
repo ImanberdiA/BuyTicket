@@ -7,14 +7,14 @@ const RaceSchema = new Schema({
     flight_date: {type: String},
     departure_time: {type: String},
     boarding_time: {type: String},
-    baggage: {type: Number},
+    baggage: {type: String},
     class_of_service: {type: String},
     airline: {type: String},
     travel_time: {type: String},
-    cost: {type: Number}
+    cost: {type: String}
 });
 
-const Race = module.exports = mongoose.model('race', RaceSchema);
+const Race = module.exports = mongoose.model('races', RaceSchema);
 
 module.exports.createRace = function (newRace, callback) {
     newRace.save(callback);

@@ -14,7 +14,7 @@ const TicketsOfRacesSchema = new Schema({
     cost: {type: String}
 });
 
-const TicketsRaces = module.exports = mongoose.model('tickets_races', TicketsOfRacesSchema);
+const TicketsRaces = module.exports = mongoose.model('races', TicketsOfRacesSchema);
 
 module.exports.createTicketOfRaces = function (newTicket, callback) {
     newTicket.save(callback);

@@ -27,7 +27,7 @@ app.use(session({
     })
 }));
 
-mongoose.connect('mongodb://localhost/testDB');
+mongoose.connect('mongodb://localhost/search_ticket_app');
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
@@ -78,6 +78,8 @@ app.post('/buyticket', function (req, res) {
 
 // Races function
 app.post('/races', function(req, res) {
+    console.log(req.body.flight_date);
+
     var starting_point = req.body.starting_point;
     var end_point = req.body.end_point;
     var flight_date = req.body.flight_date;

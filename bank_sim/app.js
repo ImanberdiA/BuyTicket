@@ -56,10 +56,6 @@ app.post('/poi', function (req, res) {
 
         res.redirect('http://localhost:3002/pll/?' + query);
     });
-
-
-
-
 });
 
 
