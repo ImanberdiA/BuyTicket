@@ -1,2 +1,2 @@
-# rsoikurs
-Term paper RSOI ©Imanberdi
+# booking tickets
+©Imanberdi
